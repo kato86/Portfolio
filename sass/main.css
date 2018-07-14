@@ -76,44 +76,15 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: lightgray;
+  background-color: #e6e6e6;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
   padding: 15px 20px;
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  margin-bottom: 60px;
-  width: 73vw;
-}
-
-.heading-primary-main {
-  display: block;
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 25px;
-  -webkit-animation: show-up-main 4s ease-in;
-          animation: show-up-main 4s ease-in;
-}
-
-.heading-primary-sub {
-  display: block;
-  font-size: 19px;
-  font-weight: 400;
-  letter-spacing: 47px;
-  -webkit-animation: show-up-sub 4s ease-in-out;
-          animation: show-up-sub 4s ease-in-out;
-  margin-left: 13px;
-  margin-right: -10px;
 }
 
 .btn:link, .btn:visited {
@@ -175,5 +146,33 @@ body {
           animation: moveInButton .5s ease-out .75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.header {
+  border-bottom: 1px solid #930ee0;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__navigation a {
+  width: 15vw;
+  text-decoration: none;
+  color: #930ee0;
+}
+
+.header__navigation a:hover, .header__navigation a:focus {
+  background-color: #930ee0;
+  color: #e6e6e6;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: 0 5px 20px gray;
+          box-shadow: 0 5px 20px gray;
 }
 /*# sourceMappingURL=main.css.map */

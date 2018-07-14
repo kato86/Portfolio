@@ -1,3 +1,26 @@
+.header {
+    border-bottom: 1px solid $color-primary;
+
+    &__navigation {
+        display: flex;
+        text-align: center;
+        justify-content: flex-end;
+        
+        a {
+            width: 15vw;
+            text-decoration: none;
+            color: $color-primary;
+
+            &:hover, &:focus {
+                background-color: $color-primary;
+                color: $color-secondary;
+                border-radius: 4px 4px 0 0;
+                box-shadow: 0 5px 20px gray;
+            }
+        }
+    }
+}
+
 // .header {
 //     // position: relative;
 //     // background-image: linear-gradient(
