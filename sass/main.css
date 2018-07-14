@@ -76,6 +76,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: lightgray;
 }
 
 body {
@@ -174,28 +175,5 @@ body {
           animation: moveInButton .5s ease-out .75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-}
-
-.header {
-  position: relative;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(226, 21, 21, 0.8)), to(rgba(219, 244, 0, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right bottom, rgba(226, 21, 21, 0.8), rgba(219, 244, 0, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-}
-
-.header__text-box--left {
-  height: 95vh;
-  float: left;
-  -webkit-clip-path: polygon(0 0, 85% 0, 44% 100%, 0 100%);
-          clip-path: polygon(0 0, 85% 0, 44% 100%, 0 100%);
-}
-
-.header__text-box--right {
-  height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(233, 15, 15, 0.8)), to(rgba(230, 230, 230, 0.624)));
-  background-image: linear-gradient(to right bottom, rgba(233, 15, 15, 0.8), rgba(230, 230, 230, 0.624));
-  -webkit-clip-path: polygon(65% 0, 100% 0, 100% 100%, 34% 100%);
-          clip-path: polygon(65% 0, 100% 0, 100% 100%, 34% 100%);
 }
 /*# sourceMappingURL=main.css.map */
