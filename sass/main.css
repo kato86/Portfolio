@@ -37,26 +37,26 @@
 @-webkit-keyframes moveInButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
   }
 }
 
 @keyframes moveInButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
   }
 }
 
@@ -84,7 +84,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 15px 20px;
 }
 
 .btn:link, .btn:visited {
@@ -148,31 +147,56 @@ body {
           animation-fill-mode: backwards;
 }
 
+.footer {
+  background-color: black;
+  color: white;
+}
+
 .header {
-  border-bottom: 1px solid #930ee0;
+  position: fixed;
+  background-color: lightgray;
+  width: 100%;
+  padding: 5px;
 }
 
 .header__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 .header__navigation a {
-  width: 15vw;
+  padding: 0 10px;
   text-decoration: none;
   color: #930ee0;
+  -webkit-animation: moveInButton .6s ease-in;
+          animation: moveInButton .6s ease-in;
 }
 
 .header__navigation a:hover, .header__navigation a:focus {
-  background-color: #930ee0;
-  color: #e6e6e6;
-  border-radius: 4px 4px 0 0;
-  -webkit-box-shadow: 0 5px 20px gray;
-          box-shadow: 0 5px 20px gray;
+  border-bottom: 1px solid #930ee0;
+}
+
+.section-start {
+  background-color: tomato;
+  height: 100vh;
+}
+
+.section-about {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.section-portfolio {
+  background-color: bisque;
+  height: 100vh;
+}
+
+.section-contact {
+  background-color: cadetblue;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

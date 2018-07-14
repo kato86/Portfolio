@@ -1,21 +1,21 @@
 .header {
-    border-bottom: 1px solid $color-primary;
+    position: fixed;
+    background-color: lightgray;
+    width: 100%;
+    padding: 5px;
 
     &__navigation {
         display: flex;
-        text-align: center;
         justify-content: flex-end;
         
         a {
-            width: 15vw;
+            padding: 0 10px;
             text-decoration: none;
             color: $color-primary;
+            animation: moveInButton .6s ease-in;
 
             &:hover, &:focus {
-                background-color: $color-primary;
-                color: $color-secondary;
-                border-radius: 4px 4px 0 0;
-                box-shadow: 0 5px 20px gray;
+                border-bottom: 1px solid $color-primary;
             }
         }
     }
