@@ -86,6 +86,22 @@ body {
   color: #777;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btn:link, .btn:visited {
   position: relative;
   text-transform: uppercase;
@@ -154,34 +170,42 @@ body {
 
 .header {
   position: fixed;
-  background-color: lightgray;
   width: 100%;
-  padding: 5px;
+  padding: 20px;
+  z-index: 1;
 }
 
 .header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  float: right;
 }
 
 .header__navigation a {
+  font-size: 15px;
   padding: 0 10px;
   text-decoration: none;
-  color: #930ee0;
+  color: white;
   -webkit-animation: moveInButton .6s ease-in;
           animation: moveInButton .6s ease-in;
 }
 
+@media only screen and (min-width: 460px) {
+  .header__navigation a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header__navigation a {
+    font-size: 25px;
+  }
+}
+
 .header__navigation a:hover, .header__navigation a:focus {
-  border-bottom: 1px solid #930ee0;
+  border-bottom: 1px solid white;
 }
 
 .section-start {
-  background-color: tomato;
+  position: relative;
   height: 100vh;
 }
 
