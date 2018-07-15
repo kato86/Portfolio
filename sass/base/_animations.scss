@@ -1,22 +1,3 @@
-@keyframes show-up-main {
-    0% {
-        opacity: 0.1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes show-up-sub {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes moveInButton {
     0% {
         opacity: 0;
@@ -26,5 +7,16 @@
     100% {
         opacity: 1;
         transform: translateY(1);
+    }
+}
+
+@keyframes borderBottom {
+    0% {
+        border-bottom: none;
+        opacity: .3;
+    }
+    100% {
+        border-bottom: 1px solid white;
+        opacity: 1;
     }
 }

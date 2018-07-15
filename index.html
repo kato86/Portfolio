@@ -4,10 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- TODO: -->
-        
-        <!-- Chyba do wyrzucenia font -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 
@@ -20,49 +16,58 @@
         <title>Kamil Tomala</title>
     </head>
     <body>
-        <header class="header">
-
+        <!-- Nagłówek strony -->
+        <header id="start" class="header">
+            <!-- Logo w lewym górym rogu -->
             <div class="header__logo-box">
-               {LOGO} Kamil Tomala
+                <img src="img/logo-white.png" alt="Logo" class="header__logo">
+                {LOGO} Kamil Tomala
             </div>
             
+            <!-- Nawigacja po stronie -->
             <nav class="header__navigation">
-                <a href="#start">Start</a>
-                <a href="#about">O mnie</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#home">Start</a>                
+                <a href="#about">O mnie</a>                
+                <a href="#portfolio">Portfolio</a>                
                 <a href="#contact">Kontakt</a>
             </nav>
             
         </header>
+<!-- Koniec nagłówka strony -->
 
+<!-- Główna część strony -->
         <main>
-            <section id="start" class="section-start section-all">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/Wavez.mp4" type="video/mp4">
-                        <source src="img/Wavez.webm" type="video/webm">
-                            Twoja przeglądarka nie obsługuje wideo w tle!
-                    </video>
-                </div>
-                START
+            <section id="home" class="section-home">
+
+               <!-- Tekst na ekranie powitalnym -->
+            <div class="text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Witaj</span>
+                    <span class="heading-primary--sub">na mojej stronie</span>
+                </h1>
+            </div>
+
             </section>
 
-            <section id="about" class="section-about section-all">
+            <section id="about" class="section-about">
                 About
             </section>
 
-            <section id="portfolio" class="section-portfolio section-all">
+            <section id="portfolio" class="section-portfolio">
                 Portfolio
             </section>
 
-            <section id="contact" class="section-contact section-all">
+            <section id="contact" class="section-contact">
                 Kontakt
             </section>
 
         </main>
-        
+        <!-- Koniec głównej części strony -->
+
+        <!-- Stopka -->
         <footer class="footer">
             Footer
         </footer>
+        <!-- Koniec stopki -->
     </body>
 </html>

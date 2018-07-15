@@ -1,39 +1,3 @@
-@-webkit-keyframes show-up-main {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes show-up-main {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes show-up-sub {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes show-up-sub {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes moveInButton {
   0% {
     opacity: 0;
@@ -57,6 +21,28 @@
     opacity: 1;
     -webkit-transform: translateY(1);
             transform: translateY(1);
+  }
+}
+
+@-webkit-keyframes borderBottom {
+  0% {
+    border-bottom: none;
+    opacity: .3;
+  }
+  100% {
+    border-bottom: 1px solid white;
+    opacity: 1;
+  }
+}
+
+@keyframes borderBottom {
+  0% {
+    border-bottom: none;
+    opacity: .3;
+  }
+  100% {
+    border-bottom: 1px solid white;
+    opacity: 1;
   }
 }
 
@@ -170,43 +156,58 @@ body {
 
 .header {
   position: fixed;
+  height: 10vh;
   width: 100%;
-  padding: 20px;
   z-index: 1;
+  background-color: #930ee0;
+  opacity: .7;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.header__logo {
+  height: 3.5rem;
 }
 
 .header__navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   float: right;
+  padding: 10px;
 }
 
 .header__navigation a {
-  font-size: 15px;
+  font-size: 10px;
   padding: 0 10px;
   text-decoration: none;
-  color: white;
-  -webkit-animation: moveInButton .6s ease-in;
-          animation: moveInButton .6s ease-in;
+  text-transform: lowercase;
+  color: #dddddd;
 }
 
 @media only screen and (min-width: 460px) {
   .header__navigation a {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .header__navigation a {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
-.header__navigation a:hover, .header__navigation a:focus {
-  border-bottom: 1px solid white;
-}
-
-.section-start {
+.section-home {
   position: relative;
   height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(221, 221, 221, 0.8)), to(rgba(88, 88, 88, 0.8))), url("../img/josh-spires-734341-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, rgba(221, 221, 221, 0.8), rgba(88, 88, 88, 0.8)), url("../img/josh-spires-734341-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 .section-about {
@@ -222,5 +223,14 @@ body {
 .section-contact {
   background-color: cadetblue;
   height: 100vh;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
