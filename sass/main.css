@@ -66,7 +66,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -159,7 +159,6 @@ body {
   height: 10px;
   width: 100%;
   z-index: 1;
-  background-color: #930ee0;
 }
 
 .header__logo-box {
@@ -233,5 +232,10 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.separates {
+  background-color: #930ee0;
+  height: 10px;
 }
 /*# sourceMappingURL=main.css.map */
