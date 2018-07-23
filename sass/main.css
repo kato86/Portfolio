@@ -235,7 +235,10 @@ body {
 }
 
 .separates {
-  background-color: #930ee0;
   height: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(147, 14, 224, 0.8)), to(rgba(221, 221, 221, 0.8)));
+  background-image: linear-gradient(to right, rgba(147, 14, 224, 0.8), rgba(221, 221, 221, 0.8));
+  -webkit-box-shadow: 0px 1px 6px #930ee0;
+          box-shadow: 0px 1px 6px #930ee0;
 }
 /*# sourceMappingURL=main.css.map */
