@@ -1,11 +1,18 @@
-.section-home {
-    position: relative;
-    height: 100vh;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-lightgray, 0.8)), to(rgba($color-darkgray, 0.8))), url("../img/josh-spires-734341-unsplash.jpg");
-    background-image: linear-gradient(to right bottom, rgba($color-lightgray, 0.8), rgba($color-darkgray, 0.8)), url("../img/josh-spires-734341-unsplash.jpg");
-    background-size: cover;
-    background-position: top;
+// .section-home {
+//     background-attachment: fixed;
+//     background-position: 50% 0;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: 100vh;
+//     // position: relative;
+//     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-lightgray, 0.8)), to(rgba($color-darkgray, 0.8))), url("../img/josh-spires-734341-unsplash.jpg");
+//     background-image: linear-gradient(to right bottom, rgba($color-lightgray, 0.8), rgba($color-darkgray, 0.8)), url("../img/josh-spires-734341-unsplash.jpg");
+//     // background-position: top;
 
+// }
+.parallax-window {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(white, 0.6));
 }
 
 .section-about {
