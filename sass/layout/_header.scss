@@ -17,7 +17,7 @@
     &__navigation {
         display: inline-flex;
         float: right;
-        padding: 10px;
+        margin-right: 40px;
         
         a {
             font-size: 10px;
@@ -25,6 +25,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: white;
+            // border-bottom: 1px solid $color-primary;
             
             @include screen('mobile') {
                 font-size: 15px;
@@ -37,6 +38,7 @@
             &:hover, &:focus {
                 border-bottom: 2px solid $color-primary;
                 color: $color-primary;
+                animation: borderBottom 1s ease-in-out;
             }
         }
 
