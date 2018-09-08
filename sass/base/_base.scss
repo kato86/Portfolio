@@ -8,10 +8,18 @@
 
 html {
     font-size: 62.5%;
+    height: 100%; 
+    overflow: hidden; 
 }
 
 body {
     margin: 0 10px;
     box-sizing: border-box;
-    background-color: black;
+    // background-color: black;
+    background: radial-gradient(
+    circle closest-corner at center 125px,
+    #222,
+    black 60%
+  ) no-repeat;
+    background-repeat: no-repeat;
 }
