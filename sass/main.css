@@ -9,8 +9,6 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -28,14 +26,48 @@ body {
   color: #777;
 }
 
+.btn {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.btn-circle {
+  border: 1px solid white;
+  border-radius: 100px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
+
+header {
+  height: 100vh;
+}
+
 .header-logo {
   border: 1px solid red;
   float: left;
+  position: fixed;
 }
 
 .navbar {
-  float: right;
+  right: 0;
   padding: 20px;
+  position: fixed;
 }
 
 .navbar-contener {
@@ -62,6 +94,11 @@ body {
   border-width: 2px;
 }
 
+.navbar-items a {
+  text-decoration: none;
+  color: white;
+}
+
 .start {
   position: absolute;
   top: 50%;
@@ -76,6 +113,7 @@ body {
   letter-spacing: .5rem;
   text-transform: uppercase;
   background: radial-gradient(circle farthest-corner at center center, #ccc, #333) no-repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -100,5 +138,21 @@ body {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
   text-align: center;
+}
+
+.section-about {
+  height: 100vh;
+}
+
+.section-portfolio {
+  height: 100vh;
+}
+
+.section-cv {
+  height: 100vh;
+}
+
+.section-contact {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

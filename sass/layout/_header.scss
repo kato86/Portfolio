@@ -1,11 +1,17 @@
+header {
+    height: 100vh;
+}
+
 .header-logo {
     border: 1px solid red;
     float: left;
+    position: fixed;
 }
 
 .navbar {
-    float: right;
+    right: 0;
     padding: 20px;
+    position: fixed;
 
     &-contener {
         display: inline-flex;
@@ -24,6 +30,11 @@
         &:hover {
             border-bottom: 1px solid $primary-color;
             border-width: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
@@ -44,6 +55,7 @@
           #ccc,
           #333
         ) no-repeat;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
