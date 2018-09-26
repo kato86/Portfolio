@@ -1,42 +1,14 @@
 @-webkit-keyframes arrow-down {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  to {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 
 @keyframes arrow-down {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  to {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 
@@ -124,34 +96,39 @@ body {
   display: block;
 }
 
-.btn-circle {
+.btn-about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 1px solid white;
   border-radius: 5px;
-  position: relative;
   width: 50px;
-  height: 51px;
+  height: 50px;
   top: 100px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
-.btn i {
+.btn-about .arrow-animated {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   font-size: 30px;
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100%;
   height: 100%;
-  padding: 9px 0;
+  padding: 10px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.btn i:hover {
+.btn-about .arrow-animated:hover {
   color: #ea9554;
   -webkit-animation: arrow-down 1s infinite;
           animation: arrow-down 1s infinite;

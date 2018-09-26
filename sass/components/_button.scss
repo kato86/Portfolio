@@ -3,33 +3,36 @@
     text-align: center;
     display: block;
 
-    &-circle {
+    &-about {
+        position: relative;
+        display: flex;        
         border: 1px solid white;
         border-radius: 5px;        
-        position: relative;        
         width: 50px;        
-        height: 51px;        
+        height: 50px;        
         top: 100px;        
         left: 50%;        
         transform: translate(-50%);   
+
+        .arrow-animated {
+            position: absolute;
+            display: flex;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            color: white;
+            font-size: 30px;
+            transition: all .5s;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            justify-content: center;
+    
+            &:hover {
+                color: $primary-color;
+                animation: arrow-down 1s infinite;
+            }
+    
+        }    
     }
-
-    i {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 30px;
-        transition: all .5s;
-        width: 100%;
-        height: 100%;
-        padding: 9px 0;
-
-        &:hover {
-            color: $primary-color;
-            animation: arrow-down 1s infinite;
-        }
-
-    }    
 }
