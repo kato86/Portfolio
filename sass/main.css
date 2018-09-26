@@ -54,7 +54,6 @@ html {
 }
 
 body {
-  margin: 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: radial-gradient(circle closest-corner at center 125px, #222, black 60%) no-repeat;
@@ -205,8 +204,13 @@ body {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
-header {
-  height: 100vh;
+.header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+  border-bottom: 1px solid;
+  z-index: 1;
 }
 
 .header-logo {
@@ -216,9 +220,8 @@ header {
 }
 
 .navbar {
-  right: 0;
+  text-align: right;
   padding: 20px;
-  position: fixed;
 }
 
 .navbar-contener {
@@ -289,6 +292,11 @@ header {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
   text-align: center;
+}
+
+.section-start {
+  height: 100vh;
+  width: 100%;
 }
 
 .section-about {
