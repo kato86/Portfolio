@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    height: 60px;
+    height: 47px;
     width: 100%;
     background-color: #333;
     border-bottom: 1px solid;
@@ -45,9 +45,10 @@
 
 .start {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    animation: start 2s ease-out;
 
     h1 {
         display: inline-block;
@@ -64,13 +65,43 @@
         -webkit-text-fill-color: transparent;
       }
 
-      p {
-        color: #ea9554;            
-        font-weight: 600;        
+      .neon1 {
+        color: #ea9554;   
+        font-family: 'Monoton', cursive;       
+        // font-weight: 600;        
         font-size: 1.8rem;        
         position: absolute;        
         top: 60px;        
         left: 3px;
+
+        -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+        animation: neon2 1.5s ease-in-out infinite alternate;
+
+        transition: all .5s;
+      }
+
+      .neon2 {
+        color: #ea9554;   
+        font-family: 'Monoton', cursive;       
+        // font-weight: 600;        
+        font-size: 1.8rem;        
+        position: absolute;        
+        top: 60px;        
+        left: 25px;
+
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+        animation: neon1 1.5s ease-in-out infinite alternate;
+
+        transition: all .5s;
+
+        &:hover {
+            color: #ea9554;
+            -webkit-animation: none;
+            -moz-animation: none;
+            animation: none;
+        }
       }
 
       &-logo {

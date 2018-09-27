@@ -1,5 +1,25 @@
+@keyframes start {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes arrow-down {
     to {
         transform: translateY(5px);
     }
 }
+
+@keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea9554, 0 0 70px #ea9554, 0 0 80px #ea9554, 0 0 100px #ea9554, 0 0 150px #ea9554;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
+    }
+  }

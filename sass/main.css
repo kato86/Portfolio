@@ -1,3 +1,29 @@
+@-webkit-keyframes start {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes arrow-down {
   to {
     -webkit-transform: translateY(5px);
@@ -9,6 +35,24 @@
   to {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea9554, 0 0 70px #ea9554, 0 0 80px #ea9554, 0 0 100px #ea9554, 0 0 150px #ea9554;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea9554, 0 0 70px #ea9554, 0 0 80px #ea9554, 0 0 100px #ea9554, 0 0 150px #ea9554;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
   }
 }
 
@@ -183,7 +227,7 @@ body {
 
 .header {
   position: fixed;
-  height: 60px;
+  height: 47px;
   width: 100%;
   background-color: #333;
   border-bottom: 1px solid;
@@ -232,10 +276,8 @@ body {
 
 .start {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-animation: start 2s ease-out;
+          animation: start 2s ease-out;
 }
 
 .start h1 {
@@ -249,13 +291,36 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.start p {
+.start .neon1 {
   color: #ea9554;
-  font-weight: 600;
+  font-family: 'Monoton', cursive;
   font-size: 1.8rem;
   position: absolute;
   top: 60px;
   left: 3px;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.start .neon2 {
+  color: #ea9554;
+  font-family: 'Monoton', cursive;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.start .neon2:hover {
+  color: #ea9554;
+  -webkit-animation: none;
+  animation: none;
 }
 
 .start-logo {
@@ -272,6 +337,15 @@ body {
 }
 
 .section-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   width: 100%;
 }
