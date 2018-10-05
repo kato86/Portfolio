@@ -23,13 +23,13 @@
             // top: 50%;
             // transform: translate(-50%, -50%);
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             transition: all .5s;
             width: 100%;
             height: 100%;
             padding: 10px 0;
             justify-content: center;
-            animation: arrow-down 1s 2s ease-in-out infinite;
+            animation: arrow-down 2s 2s ease-in-out infinite;
     
             &:hover {
                 color: $primary-color;
