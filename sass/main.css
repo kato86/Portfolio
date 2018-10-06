@@ -699,6 +699,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  /* Provides part of the "X" to eliminate an image from the close link */
+  /* Provides part of the "X" to eliminate an image from the close link */
+  /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
 }
 
 .section-certyfikaty-flex--box {
@@ -706,94 +709,103 @@ body {
   /* Shine */
 }
 
-.section-certyfikaty-flex--box .shine-figure {
-  position: relative;
-  width: 300px;
+.section-certyfikaty-flex--box a.lightbox img {
   height: 200px;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  overflow: hidden;
+  width: 300px;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 8px white;
+          box-shadow: 0px 0px 8px white;
+  margin: 94px 20px 20px 20px;
 }
 
-.section-certyfikaty-flex--box .shine-figure::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
-
-.section-certyfikaty-flex--box .shine-figure:hover::before {
-  -webkit-animation: shine .75s;
-  animation: shine .75s;
-}
-
-.section-certyfikaty-flex--box .shine-figure:hover + .image-text {
-  bottom: -36px;
-  opacity: 1;
-}
-
-.section-certyfikaty-flex--box .shine-figure .image {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.section-certyfikaty .overlay {
+.section-certyfikaty-flex .lightbox-target {
   position: fixed;
   top: -100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
+  z-index: 1;
 }
 
-.section-certyfikaty .overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.section-certyfikaty .popup {
-  text-align: center;
-  position: relative;
-  -webkit-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out;
-  height: 100%;
-}
-
-.section-certyfikaty .popup .close {
+.section-certyfikaty-flex .lightbox-target img {
+  margin: auto;
   position: absolute;
-  top: 22rem;
-  right: 32rem;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-  font-size: 50px;
-  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 8px white;
+          box-shadow: 0px 0px 8px white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.section-certyfikaty-flex a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  color: black;
   text-decoration: none;
-  color: white;
-}
-
-.section-certyfikaty .popup .close:hover {
-  color: #ea9554;
-}
-
-.section-certyfikaty .popup img {
   position: absolute;
-  width: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: -100px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.section-certyfikaty-flex a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.section-certyfikaty-flex a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.section-certyfikaty-flex .lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-certyfikaty-flex .lightbox-target:target img {
+  max-height: 50%;
+  max-width: 100%;
+}
+
+.section-certyfikaty-flex .lightbox-target:target a.lightbox-close {
+  top: 0px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .section-cv {
