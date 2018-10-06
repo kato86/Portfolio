@@ -74,3 +74,14 @@
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
     }
   }
+
+  @-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
