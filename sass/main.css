@@ -838,17 +838,85 @@ body {
   height: 100vh;
 }
 
-.section-cv .cv-cat {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.section-cv .cv-cat--2 {
-  font-size: 15px;
-}
-
 .section-contact {
   height: 100vh;
+}
+
+.section-contact .honeycomb {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.section-contact .hexagon {
+  position: relative;
+  display: inline-block;
+  /* left/right margin approx. 25% of .hexagon width + spacing */
+  margin: 1px 18px;
+  background-color: #efef8f;
+  text-align: center;
+}
+
+.section-contact .hexagon, .section-contact .hexagon::before, .section-contact .hexagon::after {
+  /* easy way: height is width * 1.732
+            actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
+            remove border-radius for sharp corners on hexagons */
+  width: 67px;
+  height: 116px;
+  border-radius: 20%/5%;
+}
+
+.section-contact .hexagon::before {
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.section-contact .hexagon::after {
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.section-contact .hexagon:nth-child(even) {
+  /* top approx. 50% of .hexagon height + spacing */
+  top: 59px;
+}
+
+.section-contact .hexagon:hover {
+  background-color: #ea9554;
+  cursor: pointer;
+  z-index: 105;
+}
+
+.section-contact .hexagon:hover .hexagontent {
+  color: red;
+}
+
+.section-contact .hexagon:active {
+  background-color: #ea9554;
+  z-index: 110;
+}
+
+.section-contact .hexagontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140%;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  z-index: 100;
+}
+
+.section-contact .ibws-fix {
+  /* inline-block whitespace fix */
+  font-size: 0;
 }
 /*# sourceMappingURL=main.css.map */

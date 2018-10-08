@@ -233,19 +233,78 @@
     &-cv {
         height: 100vh;
 
-        .cv-cat {
-            font-size: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .cv-cat--2 {
-            font-size: 15px;
-        }
-
+    
     }
 
     &-contact {
         height: 100vh;
+
+        .honeycomb {
+            margin: 50px auto;
+            text-align: center;
+          }
+
+        .hexagon {
+            position: relative;
+            display: inline-block;
+            /* left/right margin approx. 25% of .hexagon width + spacing */
+            margin: 1px 18px;
+            background-color: hsla(60, 75%, 75%, 1.0);
+            text-align: center;
+          }
+          .hexagon, .hexagon::before, .hexagon::after {
+            /* easy way: height is width * 1.732
+            actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
+            remove border-radius for sharp corners on hexagons */
+            width: 67px;
+            height: 116px;
+            border-radius: 20%/5%;
+          }
+          .hexagon::before {
+            background-color: inherit;
+            content: "";
+            position: absolute;
+            left: 0;
+            transform: rotate(-60deg);
+          }
+          .hexagon::after {
+            background-color: inherit;
+            content: "";
+            position: absolute;
+            left: 0;
+            transform: rotate(60deg);
+          }
+          .hexagon:nth-child(even) {
+            /* top approx. 50% of .hexagon height + spacing */
+            top: 59px;
+          }
+          .hexagon:hover {
+            background-color: $primary-color;
+            cursor: pointer;
+            z-index: 105;
+          }
+
+          .hexagon:hover .hexagontent {
+              color: red;
+          }
+          
+          .hexagon:active {
+            background-color: $primary-color;
+            z-index: 110;
+          }
+          .hexagontent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 140%;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            z-index: 100;
+          }
+          .ibws-fix {
+            /* inline-block whitespace fix */
+            font-size: 0;
+          }
     }
 }
