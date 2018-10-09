@@ -850,16 +850,13 @@ body {
 .section-contact .hexagon {
   position: relative;
   display: inline-block;
-  /* left/right margin approx. 25% of .hexagon width + spacing */
   margin: 1px 18px;
-  background-color: #efef8f;
+  background-color: lightgray;
   text-align: center;
+  color: gray;
 }
 
 .section-contact .hexagon, .section-contact .hexagon::before, .section-contact .hexagon::after {
-  /* easy way: height is width * 1.732
-            actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
-            remove border-radius for sharp corners on hexagons */
   width: 67px;
   height: 116px;
   border-radius: 20%/5%;
@@ -884,18 +881,17 @@ body {
 }
 
 .section-contact .hexagon:nth-child(even) {
-  /* top approx. 50% of .hexagon height + spacing */
   top: 59px;
 }
 
 .section-contact .hexagon:hover {
-  background-color: #ea9554;
+  background-color: gray;
   cursor: pointer;
   z-index: 105;
 }
 
 .section-contact .hexagon:hover .hexagontent {
-  color: red;
+  color: white;
 }
 
 .section-contact .hexagon:active {
@@ -913,6 +909,10 @@ body {
   font-size: 1.4rem;
   line-height: 1.2;
   z-index: 100;
+}
+
+.section-contact .hexagontent i {
+  font-size: 30px;
 }
 
 .section-contact .ibws-fix {
