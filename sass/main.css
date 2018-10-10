@@ -394,8 +394,8 @@ body {
   margin-top: 8rem;
 }
 
-.u-padding-top-big {
-  padding-top: 8rem;
+.padding-top-big {
+  padding-top: 4.5rem;
 }
 
 .u-left {
@@ -408,6 +408,10 @@ body {
 
 .u-list-style-none {
   list-style: none;
+}
+
+.bg-color {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .btn {
@@ -447,7 +451,6 @@ body {
 }
 
 .row {
-  max-width: 114rem;
   margin: 0 auto;
 }
 
@@ -840,6 +843,28 @@ body {
 
 .section-contact {
   height: 100vh;
+  text-align: center;
+}
+
+.section-contact .contact-text span {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0px 0px 4px #ea9554;
+}
+
+.section-contact .contact-text span:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.section-contact .contact-text span:nth-child(3) {
+  letter-spacing: .5rem;
+}
+
+.section-contact .contact-text p {
+  font-size: 20px;
+  letter-spacing: .8rem;
+  color: #ea9554;
 }
 
 .section-contact .honeycomb {
