@@ -1,6 +1,42 @@
+//wysuwające się podkreślenie z lewej strony, po najechaniu na nawigację
+.left-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $primary-color;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover:before, &:focus:before, &:active:before {
+        right: 0;
+      }
+  }
+
+
 .header {
     position: fixed;
-    height: 47px;
+    height: 70px;
     width: 100%;
     background-color: #333;
     border-bottom: 1px solid;
@@ -26,19 +62,26 @@
     }
 
     &-items {
+        display: inline-block;
+        padding: 10px;
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
         margin: 0 20px;
+        line-height: 18px;
 
-        &:hover {
-            border-bottom: 1px solid $primary-color;
-            border-width: 2px;
-        }
+        // &:hover {
+        //     background: $primary-color;
+
+        //     a {
+        //         color: #000;
+        //     }
+        // }
 
         a {
             text-decoration: none;
             color: white;
+            font-size: 20px;
         }
     }
 }

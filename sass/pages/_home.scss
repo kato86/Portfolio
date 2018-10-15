@@ -26,7 +26,12 @@
     color: $primary-color;
 }
 
+.anchor {
+    display: block;;
+}
+
 .section {
+
 
     &-start {
         display: flex;
