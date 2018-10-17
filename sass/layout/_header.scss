@@ -46,6 +46,14 @@
         float: left;
         position: fixed;
         font-size: 30px;
+
+        img {
+            width: 60px;
+            position: relative;
+            top: 13px;
+            left: 10px;
+            opacity: .7;
+        }
     }
 }
 
@@ -118,9 +126,9 @@
         top: 60px;        
         left: 3px;
 
-        -webkit-animation: neon1 5s infinite;
-        -moz-animation: neon1 5s infinite;
-        animation: neon1 5s infinite;
+        -webkit-animation: neon1 4s infinite;
+        -moz-animation: neon1 4s infinite;
+        animation: neon1 4s infinite;
 
         // transition: all .5s;
       }
@@ -151,15 +159,15 @@
       }
 
       .logo {
-        border: 1px solid white;
-        border-radius: 100px;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -10%;
-        left: 50%;
-        transform: translate(-50%, -80%);
-        text-align: center;
+
+        img {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            opacity: .7;
+        }
       }
 }
 

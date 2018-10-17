@@ -395,7 +395,7 @@ body {
 }
 
 .padding-top-big {
-  padding-top: 4.5rem;
+  padding-top: 5.9rem;
 }
 
 .u-left {
@@ -546,6 +546,14 @@ body {
   font-size: 30px;
 }
 
+.header-logo img {
+  width: 60px;
+  position: relative;
+  top: 13px;
+  left: 10px;
+  opacity: .7;
+}
+
 .navbar {
   text-align: right;
   padding: 20px;
@@ -603,8 +611,8 @@ body {
   position: absolute;
   top: 60px;
   left: 3px;
-  -webkit-animation: neon1 5s infinite;
-  animation: neon1 5s infinite;
+  -webkit-animation: neon1 4s infinite;
+  animation: neon1 4s infinite;
 }
 
 .welcome-text .neon2 {
@@ -627,17 +635,14 @@ body {
   animation: none;
 }
 
-.welcome-text .logo {
-  border: 1px solid white;
-  border-radius: 100px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -10%;
+.welcome-text .logo img {
+  position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
-  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  opacity: .7;
 }
 
 .column {
