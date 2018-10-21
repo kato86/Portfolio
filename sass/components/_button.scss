@@ -6,15 +6,7 @@
     &-about {
         position: absolute;
         bottom: 10vh;
-        animation: arrow-down-show 2s ease-out;
-        // display: flex;        
-        // border: 1px solid white;
-        // border-radius: 5px;        
-        // width: 50px;        
-        // height: 50px;        
-        // top: 100px;        
-        // left: 50%;        
-        // transform: translate(-50%);   
+        animation: arrow-down-show 6s ease-out;
 
         .arrow-animated {
             position: absolute;
@@ -29,11 +21,12 @@
             height: 100%;
             padding: 10px 0;
             justify-content: center;
+            opacity: .5;
             animation: arrow-down 2s 2s ease-in-out infinite;
     
             &:hover {
                 color: $primary-color;
-                // animation: arrow-down 1s infinite;
+                opacity: 1;
             }
     
         }    

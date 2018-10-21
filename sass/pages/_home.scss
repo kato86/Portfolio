@@ -1,3 +1,7 @@
+main {
+    background: inherit;
+}
+
 .column {
 	margin: 15px 15px 0;
 	padding: 0;
@@ -40,9 +44,26 @@
         height: 100vh;
         width: 100%;
 
-        // .mouse-icon {
-        //     background-image: url("/icon/basic_magic_mouse.png");
-        // }
+        .mouse-icon {
+            position: absolute;
+            bottom: 110px;
+            opacity: .5;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            svg:hover {
+
+                path {
+                    stroke: $primary-color;
+                    
+                }
+                line {
+                    stroke: $primary-color;
+                }
+            }
+        }
     }
 
     &-about {
@@ -50,8 +71,9 @@
         width: 100%;
         
         &_photo {
-            width: 40rem;
-            transform: rotate(-90deg);    
+            // width: 40rem;
+            transform: rotate(-90deg);
+            position: absolute;   
             
             img {
                 width: 500px;
@@ -62,6 +84,21 @@
             
             p {
                 font-size: 20px;
+            }
+
+        }
+
+        .row {
+            display: flex;
+
+
+            &-left {
+                flex: 1;
+                position: relative;
+            }
+
+            &-right {
+                flex: 1;
             }
 
         }

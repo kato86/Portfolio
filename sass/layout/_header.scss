@@ -99,9 +99,8 @@
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
-    animation: start 2s ease-out;
 
-    h1 {
+    .name {
         display: inline-block;
         font-size: 4.5rem;
         letter-spacing: .5rem;
@@ -114,6 +113,8 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: start 3s ease-in-out;
+
       }
 
       .neon1 {
@@ -123,7 +124,7 @@
         // font-weight: 600;        
         font-size: 1.8rem;        
         position: absolute;        
-        top: 60px;        
+        top: 134px;        
         left: 3px;
 
         -webkit-animation: neon1 4s infinite;
@@ -140,7 +141,7 @@
         // font-weight: 600;        
         font-size: 1.8rem;        
         position: absolute;        
-        top: 60px;        
+        top: 134px;        
         left: 25px;
 
         -webkit-animation: neon2 2s ease-in-out infinite alternate;

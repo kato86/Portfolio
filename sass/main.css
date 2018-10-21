@@ -1,26 +1,28 @@
 @-webkit-keyframes start {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-100px) scale(0.1);
+            transform: translateY(-100px) scale(0.1);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    text-shadow: 5px -1px;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
   }
 }
 
 @keyframes start {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-100px) scale(0.1);
+            transform: translateY(-100px) scale(0.1);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    text-shadow: 5px -1px;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
   }
 }
 
@@ -423,8 +425,8 @@ body {
 .btn-about {
   position: absolute;
   bottom: 10vh;
-  -webkit-animation: arrow-down-show 2s ease-out;
-          animation: arrow-down-show 2s ease-out;
+  -webkit-animation: arrow-down-show 6s ease-out;
+          animation: arrow-down-show 6s ease-out;
 }
 
 .btn-about .arrow-animated {
@@ -442,12 +444,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: .5;
   -webkit-animation: arrow-down 2s 2s ease-in-out infinite;
           animation: arrow-down 2s 2s ease-in-out infinite;
 }
 
 .btn-about .arrow-animated:hover {
   color: #ea9554;
+  opacity: 1;
+}
+
+footer {
+  height: 25vh;
+}
+
+#site-footer {
+  padding: 25px 0;
+  font-size: 85%;
+  background-color: #2A2A2A;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#site-footer {
+  min-height: 20vw;
+  background-size: cover;
+  background-position: center;
 }
 
 .row {
@@ -589,11 +614,9 @@ body {
 
 .welcome-text {
   position: absolute;
-  -webkit-animation: start 2s ease-out;
-          animation: start 2s ease-out;
 }
 
-.welcome-text h1 {
+.welcome-text .name {
   display: inline-block;
   font-size: 4.5rem;
   letter-spacing: .5rem;
@@ -602,6 +625,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: start 3s ease-in-out;
+          animation: start 3s ease-in-out;
 }
 
 .welcome-text .neon1 {
@@ -609,7 +634,7 @@ body {
   font-family: 'Warnes', cursive;
   font-size: 1.8rem;
   position: absolute;
-  top: 60px;
+  top: 134px;
   left: 3px;
   -webkit-animation: neon1 4s infinite;
   animation: neon1 4s infinite;
@@ -620,7 +645,7 @@ body {
   font-family: 'Warnes', cursive;
   font-size: 1.8rem;
   position: absolute;
-  top: 60px;
+  top: 134px;
   left: 25px;
   -webkit-animation: neon2 2s ease-in-out infinite alternate;
   animation: neon2 2s ease-in-out infinite alternate;
@@ -643,6 +668,10 @@ body {
           transform: translate(-50%, -50%);
   width: 100px;
   opacity: .7;
+}
+
+main {
+  background: inherit;
 }
 
 .column {
@@ -695,15 +724,33 @@ body {
   width: 100%;
 }
 
+.section-start .mouse-icon {
+  position: absolute;
+  bottom: 110px;
+  opacity: .5;
+}
+
+.section-start .mouse-icon:hover {
+  opacity: 1;
+}
+
+.section-start .mouse-icon svg:hover path {
+  stroke: #ea9554;
+}
+
+.section-start .mouse-icon svg:hover line {
+  stroke: #ea9554;
+}
+
 .section-about {
   height: 100vh;
   width: 100%;
 }
 
 .section-about_photo {
-  width: 40rem;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  position: absolute;
 }
 
 .section-about_photo img {
@@ -712,6 +759,25 @@ body {
 
 .section-about_text p {
   font-size: 20px;
+}
+
+.section-about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-about .row-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.section-about .row-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .section-certyfikaty {
