@@ -33,6 +33,10 @@
       }
   }
 
+  .txt-change > .txt {
+      border-right: 0.2rem solid #777;
+  }
+
 
 .header {
     position: fixed;
@@ -157,6 +161,32 @@
             animation: none;
         }
       }
+
+      .neon3 {
+        color: #ea9554;   
+        // font-family: 'Monoton', cursive; 
+        font-family: 'Warnes', cursive;      
+        // font-weight: 600;        
+        font-size: 1.8rem;        
+        position: absolute;        
+        top: 134px;        
+        left: 60px;
+
+        -webkit-animation: neon2 2s ease-in-out infinite alternate;
+        -moz-animation: neon2 2s ease-in-out infinite alternate;
+        animation: neon2 2s ease-in-out infinite alternate;
+
+        transition: all .5s;
+
+        &:hover {
+            color: #6d5669;
+            text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+            -webkit-animation: none;
+            -moz-animation: none;
+            animation: none;
+        }
+      }
+
 
       .logo {
 

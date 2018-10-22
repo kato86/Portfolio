@@ -556,6 +556,10 @@ footer {
   right: 0;
 }
 
+.txt-change > .txt {
+  border-right: 0.2rem solid #777;
+}
+
 .header {
   position: fixed;
   height: 70px;
@@ -653,6 +657,26 @@ footer {
 }
 
 .welcome-text .neon2:hover {
+  color: #6d5669;
+  text-shadow: 0 0 3px #635861, 0 0 5px #635861;
+  -webkit-animation: none;
+  animation: none;
+}
+
+.welcome-text .neon3 {
+  color: #ea9554;
+  font-family: 'Warnes', cursive;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 134px;
+  left: 60px;
+  -webkit-animation: neon2 2s ease-in-out infinite alternate;
+  animation: neon2 2s ease-in-out infinite alternate;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.welcome-text .neon3:hover {
   color: #6d5669;
   text-shadow: 0 0 3px #635861, 0 0 5px #635861;
   -webkit-animation: none;
