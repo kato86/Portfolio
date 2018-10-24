@@ -200,6 +200,18 @@ body {
           animation: borderBottom 1s ease-in-out;
 }
 
+.heading-primary--main {
+  font-size: 50px;
+  text-transform: uppercase bold;
+  letter-spacing: 2px;
+}
+
+.heading-primary--sub {
+  font-size: 30px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
 .parallax-window {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)));
