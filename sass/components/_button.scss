@@ -6,7 +6,7 @@
     &-about {
         position: absolute;
         bottom: 10vh;
-        animation: arrow-down-show 6s ease-out;
+        animation: arrow-down-show 4s ease-out;
 
         .arrow-animated {
             position: absolute;
@@ -22,7 +22,8 @@
             padding: 10px 0;
             justify-content: center;
             opacity: .5;
-            animation: arrow-down 2s 2s ease-in-out infinite;
+            top: -5px;
+            animation: arrow-down 2s 3s ease-in-out infinite;
     
             &:hover {
                 color: $primary-color;

@@ -18,7 +18,7 @@
         left: 0;
         right: 100%;
         bottom: 0;
-        background: $primary-color;
+        background: #ccc;
         height: 4px;
         -webkit-transition-property: right;
         transition-property: right;
@@ -42,7 +42,7 @@
     position: fixed;
     height: 70px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(255, 255, 255, 0.2);
     z-index: 1;
 
     &-logo {
@@ -91,7 +91,7 @@
 
         a {
             text-decoration: none;
-            color: white;
+            color: $primary-color;
             font-size: 20px;
         }
     }
