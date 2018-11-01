@@ -978,7 +978,7 @@ main .ibws-fix {
   font-size: 0;
 }
 
-main .section-start {
+.section-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,7 +992,7 @@ main .section-start {
   width: 100%;
 }
 
-main .section-start .mouse-icon {
+.section-start .mouse-icon {
   position: absolute;
   bottom: 110px;
   opacity: .5;
@@ -1000,53 +1000,53 @@ main .section-start .mouse-icon {
           animation: mouse-icon 4s ease-in;
 }
 
-main .section-start .mouse-icon svg:hover path {
+.section-start .mouse-icon svg:hover path {
   stroke: #ea9554;
 }
 
-main .section-start .mouse-icon svg:hover line {
+.section-start .mouse-icon svg:hover line {
   stroke: #ea9554;
 }
 
-main .section-about {
+.section-about {
   height: 100vh;
   width: 100%;
 }
 
-main .section-about_photo {
+.section-about_photo {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
 }
 
-main .section-about_photo img {
+.section-about_photo img {
   width: 500px;
 }
 
-main .section-about_text p {
+.section-about_text p {
   font-size: 20px;
 }
 
-main .section-about .row {
+.section-about .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .section-about .row-left {
+.section-about .row-left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   position: relative;
 }
 
-main .section-about .row-right {
+.section-about .row-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-main .section-certyfikaty {
+.section-certyfikaty {
   height: 100vh;
   width: 100%;
   -webkit-box-align: center;
@@ -1055,7 +1055,7 @@ main .section-certyfikaty {
   margin-top: 50px;
 }
 
-main .section-certyfikaty-flex {
+.section-certyfikaty-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,16 +1063,16 @@ main .section-certyfikaty-flex {
       flex-wrap: wrap;
 }
 
-main .section-certyfikaty-flex--box {
+.section-certyfikaty-flex--box {
   margin: 20px;
 }
 
-main .section-certyfikaty-flex--box .lightbox {
+.section-certyfikaty-flex--box .lightbox {
   position: relative;
   overflow: hidden;
 }
 
-main .section-certyfikaty-flex--box .lightbox::before {
+.section-certyfikaty-flex--box .lightbox::before {
   position: absolute;
   top: 0;
   left: -75%;
@@ -1087,12 +1087,12 @@ main .section-certyfikaty-flex--box .lightbox::before {
   transform: skewX(-25deg);
 }
 
-main .section-certyfikaty-flex--box .lightbox:hover::before {
+.section-certyfikaty-flex--box .lightbox:hover::before {
   -webkit-animation: shine .75s;
   animation: shine .75s;
 }
 
-main .section-certyfikaty-flex--box a.lightbox img {
+.section-certyfikaty-flex--box a.lightbox img {
   height: 200px;
   width: 300px;
   border: 3px solid white;
@@ -1100,13 +1100,13 @@ main .section-certyfikaty-flex--box a.lightbox img {
           box-shadow: 0px 0px 8px white;
 }
 
-main .section-certyfikaty-flex--box:hover .loop-icon {
+.section-certyfikaty-flex--box:hover .loop-icon {
   opacity: 1;
   bottom: -8px;
   position: relative;
 }
 
-main .section-certyfikaty-flex .loop-icon {
+.section-certyfikaty-flex .loop-icon {
   position: relative;
   bottom: 25px;
   left: 0;
@@ -1124,7 +1124,7 @@ main .section-certyfikaty-flex .loop-icon {
   opacity: 0;
 }
 
-main .section-certyfikaty-flex .lightbox-target {
+.section-certyfikaty-flex .lightbox-target {
   position: fixed;
   top: -100%;
   width: 100%;
@@ -1136,7 +1136,7 @@ main .section-certyfikaty-flex .lightbox-target {
   z-index: 1;
 }
 
-main .section-certyfikaty-flex .lightbox-target img {
+.section-certyfikaty-flex .lightbox-target img {
   margin: auto;
   position: absolute;
   top: 0;
@@ -1154,7 +1154,7 @@ main .section-certyfikaty-flex .lightbox-target img {
   transition: .5s ease-in-out;
 }
 
-main .section-certyfikaty-flex .lightbox-target a.lightbox-close {
+.section-certyfikaty-flex .lightbox-target a.lightbox-close {
   display: block;
   width: 50px;
   height: 50px;
@@ -1170,7 +1170,7 @@ main .section-certyfikaty-flex .lightbox-target a.lightbox-close {
   transition: .5s ease-in-out;
 }
 
-main .section-certyfikaty-flex .lightbox-target a.lightbox-close::before {
+.section-certyfikaty-flex .lightbox-target a.lightbox-close::before {
   content: "";
   display: block;
   height: 30px;
@@ -1183,7 +1183,7 @@ main .section-certyfikaty-flex .lightbox-target a.lightbox-close::before {
   transform: rotate(45deg);
 }
 
-main .section-certyfikaty-flex .lightbox-target a.lightbox-close::after {
+.section-certyfikaty-flex .lightbox-target a.lightbox-close::after {
   content: "";
   display: block;
   height: 30px;
@@ -1196,34 +1196,34 @@ main .section-certyfikaty-flex .lightbox-target a.lightbox-close::after {
   transform: rotate(-45deg);
 }
 
-main .section-certyfikaty-flex .lightbox-target:target {
+.section-certyfikaty-flex .lightbox-target:target {
   opacity: 1;
   top: 0;
   bottom: 0;
   left: 0;
 }
 
-main .section-certyfikaty-flex .lightbox-target:target img {
+.section-certyfikaty-flex .lightbox-target:target img {
   max-height: 50%;
   max-width: 100%;
 }
 
-main .section-certyfikaty-flex .lightbox-target:target a.lightbox-close {
+.section-certyfikaty-flex .lightbox-target:target a.lightbox-close {
   top: 0px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-main .section-cv {
+.section-cv {
   height: 100vh;
   position: relative;
 }
 
-main .section-cv-box {
+.section-cv-box {
   height: 100vh;
 }
 
-main .section-cv .cv-img {
+.section-cv .cv-img {
   width: 100%;
   background-image: url(/picture/cv-image.jpg);
   opacity: .7;
@@ -1234,7 +1234,7 @@ main .section-cv .cv-img {
   background-size: cover;
 }
 
-main .section-cv .cv-contener {
+.section-cv .cv-contener {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1245,7 +1245,7 @@ main .section-cv .cv-contener {
   bottom: 0;
 }
 
-main .section-cv .cv-contener .open-popup {
+.section-cv .cv-contener .open-popup {
   position: relative;
   top: 25%;
   font-size: 30px;
@@ -1256,7 +1256,7 @@ main .section-cv .cv-contener .open-popup {
   height: 100%;
 }
 
-main .section-cv .popup {
+.section-cv .popup {
   width: 100%;
   height: 100vh;
   display: none;
@@ -1265,7 +1265,7 @@ main .section-cv .popup {
   right: 0;
 }
 
-main .section-cv .popup:before {
+.section-cv .popup:before {
   content: "";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1279,7 +1279,7 @@ main .section-cv .popup:before {
           animation: open-cv-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) 0.65s both;
 }
 
-main .section-cv .popup:after {
+.section-cv .popup:after {
   content: "";
   width: 0;
   height: 2px;
@@ -1293,7 +1293,7 @@ main .section-cv .popup:after {
   margin-top: -1px;
 }
 
-main .section-cv .popup-block {
+.section-cv .popup-block {
   height: calc(100vh - 40px);
   padding: 5% 15%;
   -webkit-box-sizing: border-box;
@@ -1305,7 +1305,7 @@ main .section-cv .popup-block {
           animation: fade .5s ease-out 1.3s both;
 }
 
-main .section-cv .popup-close {
+.section-cv .popup-close {
   width: 3.2rem;
   height: 3.2rem;
   text-indent: -9999px;
@@ -1318,34 +1318,34 @@ main .section-cv .popup-close {
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
 }
 
-main .section-cv #popup-cv:target {
+.section-cv #popup-cv:target {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 101;
 }
 
-main .section-contact {
+.section-contact {
   height: 100vh;
   text-align: center;
 }
 
-main .section-contact .contact-text span {
+.section-contact .contact-text span {
   font-size: 40px;
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 0px 4px #ea9554;
 }
 
-main .section-contact .contact-text span:nth-child(1) {
+.section-contact .contact-text span:nth-child(1) {
   text-transform: uppercase;
 }
 
-main .section-contact .contact-text span:nth-child(3) {
+.section-contact .contact-text span:nth-child(3) {
   letter-spacing: .5rem;
 }
 
-main .section-contact .contact-text p {
+.section-contact .contact-text p {
   font-size: 20px;
   letter-spacing: .8rem;
   color: #ea9554;
