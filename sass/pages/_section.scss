@@ -80,6 +80,9 @@
         &-flex {
             display: flex;
             flex-wrap: wrap;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
 
             &--box {
                 margin: 20px;   
@@ -330,16 +333,25 @@
               &-close{
                 width: 3.2rem;
                 height: 3.2rem;
-                text-indent: -9999px;
-                
+                text-indent: -9999px;                
                 position: fixed;
                 top: 20px;
-                right: 20px;
-              
+                right: 20px;              
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: contain;
                 background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+                opacity: .6;
+                -webkit-transition:-webkit-transform .25s, opacity .25s;
+                -moz-transition:-moz-transform .25s, opacity .25s;
+                transition: transform .25s, opacity .25s;
+
+                &:hover {
+                    -webkit-transform: rotate(270deg);
+                    -moz-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                    opacity:1;
+                }
               }
           }
 
