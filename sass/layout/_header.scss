@@ -18,7 +18,7 @@
         left: 0;
         right: 100%;
         bottom: 0;
-        background: #ccc;
+        background: $primary-color;
         height: 4px;
         -webkit-transition-property: right;
         transition-property: right;
@@ -62,9 +62,11 @@
         }
 
         span {
+            position: relative;
+            top: 6px;
+            left: 30px;
             font-size: 20px;
-            padding-left: 25px;
-            color: #ccc;
+            color: $nav-text-color;
             transition: all 0.5s;
 
         }
@@ -74,7 +76,7 @@
         box-shadow: 0 4px 30px -5px rgba(#000, 0.2);
         height: 50px;
         transition: all 0.3s;
-        background-color: $nav-bg;
+        background-color: $nav-bg-color;
 
         
         .logo {
@@ -128,7 +130,7 @@
 
         a {
             text-decoration: none;
-            color: $primary-color;
+            color: $nav-text-color;
             font-size: 20px;
         }
     }
