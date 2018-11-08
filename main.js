@@ -33,7 +33,7 @@ $(function(){
 });
 // koniec funkcji przewijającej
 
-// funkcja wyświetlająca stokę
+// funkcja wyświetlająca stopkę
 $(document).ready(function() {
 	
   siteFooter();
@@ -73,7 +73,7 @@ $(document).ready(function() {
 var background = document.getElementById("bgCanvas"),
     bgCtx = background.getContext("2d"),
     width = window.innerWidth,
-    height = document.body.offsetHeight;
+    height = window.innerHeight;
 
 (height < 400) ? height = 400 : height;
 
