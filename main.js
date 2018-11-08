@@ -221,3 +221,11 @@ function init() {
 
     new TypeWriter(txtElement, words, wait);
 }
+
+// Zmiana wysokości paska w trakcie scrollowania
+$(() => {
+    $(window).scroll(() => {
+        let windwoTop = $(window).scrollTop();
+        windwoTop > 100 ? $('header').addClass('header--scroll') : $('header').removeClass('header--scroll'); 
+    })
+})

@@ -477,19 +477,17 @@
           box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
+html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Playfair Display', serif;
+  font-size: 62.5%;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
   background: radial-gradient(circle closest-corner at center 125px, #222, black 60%) no-repeat;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .heading-secondary {
@@ -528,7 +526,7 @@ body {
 }
 
 .padding-top-big {
-  padding-top: 5.9rem;
+  padding-top: 5rem;
 }
 
 .padding-bottom-big {
@@ -761,28 +759,64 @@ footer {
 .header {
   width: 100%;
   height: 70px;
-  background-color: #888;
+  background-color: "transparetn";
   position: fixed;
   z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.header-logo {
+.header .logo {
   float: left;
   position: fixed;
   font-size: 30px;
 }
 
-.header-logo img {
+.header .logo-img {
   width: 60px;
   position: relative;
   top: 13px;
   left: 10px;
   opacity: .7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .logo span {
+  font-size: 20px;
+  padding-left: 25px;
+  color: #ccc;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header--scroll {
+  -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #444444;
+}
+
+.header--scroll .logo-img {
+  width: 50px;
+  top: 5px;
+}
+
+.header--scroll .logo-text {
+  opacity: 0;
+}
+
+.header--scroll .navbar {
+  padding: 5px;
 }
 
 .navbar {
   text-align: right;
   padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar-contener {
@@ -893,7 +927,7 @@ footer {
 
 canvas {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   position: absolute;
 }
 
