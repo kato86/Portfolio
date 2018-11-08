@@ -759,9 +759,10 @@ footer {
 }
 
 .header {
-  position: fixed;
-  height: 70px;
   width: 100%;
+  height: 70px;
+  background-color: #888;
+  position: fixed;
   z-index: 1;
 }
 
