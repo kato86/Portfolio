@@ -561,10 +561,15 @@ body {
   position: absolute;
   bottom: 10vh;
   -webkit-animation: arrow-down-show 4s ease-out;
-          animation: arrow-down-show 4s ease-out;
+  animation: arrow-down-show 4s ease-out;
 }
 
-.btn-about .arrow-animated {
+.btn-contact {
+  position: relative;
+  bottom: 7vh;
+}
+
+.arrow-animated {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,25 +579,26 @@ body {
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100%;
-  height: 100%;
   padding: 10px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   opacity: .5;
-  top: -5px;
-  -webkit-animation: arrow-down 2s 3s ease-in-out infinite;
-          animation: arrow-down 2s 3s ease-in-out infinite;
 }
 
-.btn-about .arrow-animated:hover {
+.arrow-animated:hover {
   color: #ea9554;
   opacity: 1;
 }
 
-.btn-contact {
-  position: relative;
-  bottom: 10px;
+.arrow-animated--start {
+  -webkit-animation: arrow-down 2s 3s ease-in-out infinite;
+  animation: arrow-down 2s 3s ease-in-out infinite;
+}
+
+.arrow-animated--contact {
+  -webkit-animation: arrow-down 2s ease-in-out infinite;
+  animation: arrow-down 2s ease-in-out infinite;
 }
 
 .button-cv {
@@ -625,14 +631,20 @@ body {
   -webkit-box-shadow: 0 0 0 0 rgba(234, 149, 84, 0.5);
           box-shadow: 0 0 0 0 rgba(234, 149, 84, 0.5);
   -webkit-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
 }
 
 .button-pulse:hover {
   -webkit-animation: none;
+  animation: none;
+}
+
+.arrow-button {
+  position: relative;
 }
 
 footer {
-  height: 25vh;
+  height: 200px;
 }
 
 #site-footer {
@@ -1391,22 +1403,22 @@ main .ibws-fix {
   text-align: center;
 }
 
-.section-contact .contact-text span {
+.section-contact .box .contact-text span {
   font-size: 40px;
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 0px 4px #ea9554;
 }
 
-.section-contact .contact-text span:nth-child(1) {
+.section-contact .box .contact-text span:nth-child(1) {
   text-transform: uppercase;
 }
 
-.section-contact .contact-text span:nth-child(3) {
+.section-contact .box .contact-text span:nth-child(3) {
   letter-spacing: .5rem;
 }
 
-.section-contact .contact-text p {
+.section-contact .box .contact-text p {
   font-size: 20px;
   letter-spacing: .8rem;
   color: #ea9554;

@@ -6,35 +6,45 @@
     &-about {
         position: absolute;
         bottom: 10vh;
+        -webkit-animation: arrow-down-show 4s ease-out;
         animation: arrow-down-show 4s ease-out;
-
-        .arrow-animated {
-            position: absolute;
-            display: flex;
-            color: white;
-            font-size: 20px;
-            transition: all .5s;
-            width: 100%;
-            height: 100%;
-            padding: 10px 0;
-            justify-content: center;
-            opacity: .5;
-            top: -5px;
-            animation: arrow-down 2s 3s ease-in-out infinite;
-    
-            &:hover {
-                color: $primary-color;
-                opacity: 1;
-            }
-    
-        }    
     }
 
     &-contact {
         position: relative;
-        bottom: 10px;
+        bottom: 7vh;
     }
 }
+
+.arrow-animated {
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    transition: all .5s;
+    width: 100%;
+    // height: 100%;
+    padding: 10px 0;
+    justify-content: center;
+    opacity: .5;
+    // top: -5px;
+
+    &:hover {
+        color: $primary-color;
+        opacity: 1;
+    }
+
+    &--start {
+        -webkit-animation: arrow-down 2s 3s ease-in-out infinite;
+        animation: arrow-down 2s 3s ease-in-out infinite;
+    }
+
+    &--contact {
+        -webkit-animation: arrow-down 2s ease-in-out infinite;
+        animation: arrow-down 2s ease-in-out infinite;
+    }
+
+}    
 
 .button-cv {
     position: relative;
@@ -65,8 +75,14 @@
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba($primary-color, .5);
     -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
 
     &:hover {
       -webkit-animation: none;
+      animation: none;
     }
+  }
+
+  .arrow-button {
+      position: relative;
   }
