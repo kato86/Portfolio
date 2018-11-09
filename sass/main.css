@@ -487,6 +487,30 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -536,6 +560,12 @@ body {
 
 .padding-top-big {
   padding-top: 5rem;
+}
+
+@media (max-width: 900px) {
+  .padding-top-big {
+    padding-top: 8.4rem;
+  }
 }
 
 .padding-bottom-big {
@@ -799,6 +829,12 @@ footer {
   color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 900px) {
+  .header .logo span {
+    display: none;
+  }
 }
 
 .header--scroll {
@@ -1127,7 +1163,7 @@ main .ibws-fix {
 }
 
 .section-about_text p {
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 
 .section-about .row {
@@ -1144,6 +1180,21 @@ main .ibws-fix {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 80%;
+  padding: 50px;
+  overflow: scroll;
+}
+
+@media (max-width: 900px) {
+  .section-about .row-right {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-about .row-right {
+    padding: 0;
+  }
 }
 
 .section-certyfikaty {
@@ -1325,6 +1376,18 @@ main .ibws-fix {
 
 .section-cv-box {
   height: 91.7vh;
+}
+
+@media (max-width: 900px) {
+  .section-cv-box {
+    height: 93.1vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-cv-box {
+    height: 94.7vh;
+  }
 }
 
 .section-cv-box .cv-img {

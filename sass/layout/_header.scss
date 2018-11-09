@@ -39,7 +39,9 @@
 
 
 .header {
+
     @include object(100%, 70px, 'transparetn');
+
     position: fixed;
     z-index: 1;
     transition: all 0.5s;
@@ -68,6 +70,10 @@
             font-size: 20px;
             color: $nav-text-color;
             transition: all 0.5s;
+
+            @include respond(tab-port) {
+                display: none;
+            }
 
         }
     }
