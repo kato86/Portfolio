@@ -487,6 +487,30 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -778,11 +802,11 @@ footer {
 .header .logo {
   float: left;
   position: fixed;
-  font-size: 30px;
+  font-size: 3em;
 }
 
 .header .logo-img {
-  width: 60px;
+  width: 3em;
   position: relative;
   top: 13px;
   left: 10px;
@@ -795,7 +819,7 @@ footer {
   position: relative;
   top: 6px;
   left: 30px;
-  font-size: 20px;
+  font-size: 1em;
   color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -846,7 +870,7 @@ footer {
   display: inline-block;
   padding: 10px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   cursor: pointer;
   margin: 0 20px;
   line-height: 18px;
@@ -855,7 +879,7 @@ footer {
 .navbar-items a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 .welcome-text {
@@ -864,8 +888,8 @@ footer {
 
 .welcome-text .name {
   display: inline-block;
-  font-size: 4.5rem;
-  letter-spacing: .5rem;
+  font-size: 4.5em;
+  letter-spacing: .3em;
   text-transform: uppercase;
   background: radial-gradient(circle farthest-corner at center center, #ccc, #333) no-repeat;
   background-clip: text;
@@ -878,7 +902,7 @@ footer {
 .welcome-text .neon1 {
   color: #ea9554;
   font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   position: absolute;
   top: 134px;
   left: 3px;
@@ -889,7 +913,7 @@ footer {
 .welcome-text .neon2 {
   color: #ea9554;
   font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   position: absolute;
   top: 134px;
   left: 25px;
@@ -909,7 +933,7 @@ footer {
 .welcome-text .neon3 {
   color: #ea9554;
   font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   position: absolute;
   top: 134px;
   left: 60px;
@@ -932,7 +956,7 @@ footer {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100px;
+  width: 10em;
   opacity: .7;
 }
 
@@ -947,15 +971,15 @@ main {
 }
 
 main .heading-primary--main {
-  font-size: 50px;
+  font-size: 5em;
   text-transform: uppercase bold;
   letter-spacing: 2px;
 }
 
 main .heading-primary--sub {
-  font-size: 30px;
+  font-size: 3em;
   text-transform: lowercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.3em;
 }
 
 main .parallax-window {
@@ -965,12 +989,12 @@ main .parallax-window {
 }
 
 main .column {
-  margin: 15px 15px 0;
+  margin: 1.5em 1.5em 0;
   padding: 0;
 }
 
 main .column:last-child {
-  padding-bottom: 60px;
+  padding-bottom: 6em;
 }
 
 main .column::after {
@@ -982,9 +1006,9 @@ main .column::after {
 main .column a.lightbox {
   position: relative;
   float: left;
-  width: 300px;
-  height: 200px;
-  margin: 0 0 0 25px;
+  width: 30em;
+  height: 20em;
+  margin: 0 0 0 2.5em;
   padding: 0;
 }
 
@@ -1001,14 +1025,14 @@ main .anchor {
 }
 
 main .honeycomb {
-  margin: 50px auto;
+  margin: 5em auto;
   text-align: center;
 }
 
 main .hexagon {
   position: relative;
   display: inline-block;
-  margin: 1px 18px;
+  margin: 0.1em 1.8em;
   background-color: lightgray;
   text-align: center;
   color: gray;
@@ -1123,11 +1147,11 @@ main .ibws-fix {
 }
 
 .section-about_photo img {
-  width: 500px;
+  width: 50em;
 }
 
 .section-about_text p {
-  font-size: 20px;
+  font-size: 2.25em;
 }
 
 .section-about .row {
@@ -1198,8 +1222,8 @@ main .ibws-fix {
 }
 
 .section-certyfikaty-flex--box a.lightbox img {
-  height: 200px;
-  width: 300px;
+  height: 20em;
+  width: 30em;
   border: 3px solid white;
   -webkit-box-shadow: 0px 0px 8px white;
           box-shadow: 0px 0px 8px white;
@@ -1221,7 +1245,7 @@ main .ibws-fix {
   margin: 0;
   padding: 0;
   color: #ea9554;
-  font-size: 18px;
+  font-size: 1.12em;
   text-decoration: none;
   text-align: center;
   -webkit-transition: .3s ease-in-out;
@@ -1355,7 +1379,7 @@ main .ibws-fix {
 .section-cv-box .cv-contener .open-popup {
   position: relative;
   top: 25%;
-  font-size: 30px;
+  font-size: 1.87em;
   margin: auto;
   text-decoration: none;
   color: #ea9554;
@@ -1450,7 +1474,7 @@ main .ibws-fix {
 }
 
 .section-contact .box .contact-text span {
-  font-size: 40px;
+  font-size: 2.5em;
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 0px 4px #ea9554;
@@ -1461,12 +1485,12 @@ main .ibws-fix {
 }
 
 .section-contact .box .contact-text span:nth-child(3) {
-  letter-spacing: .5rem;
+  letter-spacing: .3em;
 }
 
 .section-contact .box .contact-text p {
-  font-size: 20px;
-  letter-spacing: .8rem;
+  font-size: 1.25em;
+  letter-spacing: .5em;
   color: #ea9554;
 }
 /*# sourceMappingURL=main.css.map */
