@@ -52,6 +52,11 @@
     float: right;
     top: -40%;
     text-decoration: none;
+
+    @include respond(phone) {
+        right: 0;
+        float: none;
+    }
 }
 
 .button-pulse {
