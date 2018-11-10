@@ -2,6 +2,22 @@
 
     &-contener {
         height: 100%;
+
+        .section-header {
+            position: relative;
+            background-color: $section-head-color;
+            z-index: 1;
+
+            @include respond(tab-land) {
+                top: 13px;
+            }
+            @include respond(tab-port) {
+                top: -9px;
+            }
+            @include respond(phone) {
+                top: 9px;
+            }
+        }
     }
 
     &-start {
@@ -301,17 +317,17 @@
         // position: relative;
 
         &-box {
-            height: 92.7vh;
+            height: 100vh;
             
             // @include respond(tab-land) {
             //     height: 91.3vh;
             // }
-            @include respond(tab-port) {
-                height: 93.6vh;
-            }
-            @include respond(phone) {
-                height: 94.7vh;
-            }
+            // @include respond(tab-port) {
+            //     height: 93.6vh;
+            // }
+            // @include respond(phone) {
+            //     height: 94.7vh;
+            // }
 
             .cv-img {
                 width: 100%;
@@ -447,30 +463,39 @@
 
         .box {
             height: 70%;
+            position: relative;
 
-            .contact-text {
+            .wrapper {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
 
-                span {
-                    font-size: 5rem;
-                    color: #fff;
-                    font-weight: 600;
-                    text-shadow: 0px 0px 4px $primary-color;
-    
-                    &:nth-child(1) {
-                        text-transform: uppercase;
-                    }
-    
-                    &:nth-child(3) {
-                        letter-spacing: .5rem;
-                    }
-                }
+                .contact-text {
+
+                    span {
+                        font-size: 5rem;
+                        color: #fff;
+                        font-weight: 600;
+                        text-shadow: 0px 0px 4px $primary-color;
         
-                p {
-                    font-size: 20px;
-                    letter-spacing: .8rem;
-                    color: $primary-color;
-                }
-            }   
+                        &:nth-child(1) {
+                            text-transform: uppercase;
+                        }
+        
+                        &:nth-child(3) {
+                            letter-spacing: .5rem;
+                        }
+                    }
+            
+                    p {
+                        font-size: 20px;
+                        letter-spacing: .8rem;
+                        color: $primary-color;
+                    }
+                }   
+            }
+
             @include respond(tab-port) {
                 display: flex;
                 flex-direction: column;

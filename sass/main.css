@@ -558,20 +558,6 @@ body {
   margin-top: 8rem;
 }
 
-.padding-top-big {
-  padding-top: 4.6rem;
-}
-
-@media (max-width: 900px) {
-  .padding-top-big {
-    padding-top: 8.4rem;
-  }
-}
-
-.padding-bottom-big {
-  padding-bottom: 7.9rem;
-}
-
 .u-left {
   text-align: left;
 }
@@ -807,7 +793,7 @@ footer {
   height: 70px;
   background-color: "transparetn";
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1009,6 +995,30 @@ main .parallax-window {
 
 .section-contener {
   height: 100%;
+}
+
+.section-contener .section-header {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .section-contener .section-header {
+    top: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-contener .section-header {
+    top: -9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-contener .section-header {
+    top: 9px;
+  }
 }
 
 .section-start {
@@ -1334,19 +1344,7 @@ main .parallax-window {
 }
 
 .section-cv-box {
-  height: 92.7vh;
-}
-
-@media (max-width: 900px) {
-  .section-cv-box {
-    height: 93.6vh;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-cv-box {
-    height: 94.7vh;
-  }
+  height: 100vh;
 }
 
 .section-cv-box .cv-img {
@@ -1495,24 +1493,33 @@ main .parallax-window {
 
 .section-contact .box {
   height: 70%;
+  position: relative;
 }
 
-.section-contact .box .contact-text span {
+.section-contact .box .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-contact .box .wrapper .contact-text span {
   font-size: 5rem;
   color: #fff;
   font-weight: 600;
   text-shadow: 0px 0px 4px #ea9554;
 }
 
-.section-contact .box .contact-text span:nth-child(1) {
+.section-contact .box .wrapper .contact-text span:nth-child(1) {
   text-transform: uppercase;
 }
 
-.section-contact .box .contact-text span:nth-child(3) {
+.section-contact .box .wrapper .contact-text span:nth-child(3) {
   letter-spacing: .5rem;
 }
 
-.section-contact .box .contact-text p {
+.section-contact .box .wrapper .contact-text p {
   font-size: 20px;
   letter-spacing: .8rem;
   color: #ea9554;
