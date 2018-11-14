@@ -229,3 +229,15 @@ $(() => {
         windwoTop > 100 ? $('header').addClass('header--scroll') : $('header').removeClass('header--scroll'); 
     })
 })
+
+// burger menu
+$('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+});
+
+$('.a-burger').click(function() {
+    $('#toggle').toggleClass('active');
+    $('#overlay').toggleClass('open');
+
+})
