@@ -1215,6 +1215,7 @@ main .parallax-window {
 
 .section-contener {
   height: 100%;
+  position: relative;
 }
 
 .section-contener .section-header {
@@ -1419,10 +1420,10 @@ main .parallax-window {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
   text-align: center;
-  position: relative;
-  top: 15%;
+  position: absolute;
+  top: 45%;
+  width: 100%;
 }
 
 .section-certyfikaty-flex--box {
@@ -1562,21 +1563,10 @@ main .parallax-window {
   transition: all .5s ease-in-out;
 }
 
-@media (max-width: 1200px) {
-  .section-certyfikaty-flex {
-    top: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .section-certyfikaty-flex {
-    top: 0;
-  }
-}
-
 @media (max-width: 600px) {
   .section-certyfikaty-flex {
     text-align: center;
+    top: 30%;
   }
 }
 
