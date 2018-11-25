@@ -1411,10 +1411,42 @@ main .parallax-window {
 
 .section__technology-learned {
   background-color: #efefef;
-  height: 40vh;
+  height: auto;
   width: 97%;
   margin: auto;
   border-radius: 5px;
+}
+
+.section__technology-learned .contener .technology-learned--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.section__technology-learned .contener .technology-learned--logo {
+  height: 130px;
+}
+
+.section__technology-learned .contener .technology-learned--logo:nth-child(4) {
+  height: 60px;
+  width: 130px;
+}
+
+.section__technology-learned .contener .technology-learned--logo:nth-child(6) {
+  height: 60px;
+  width: 130px;
 }
 
 .section__certyfikaty {
