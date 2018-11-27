@@ -127,14 +127,6 @@
         margin: 0 20px;
         line-height: 18px;
 
-        // &:hover {
-        //     background: $primary-color;
-
-        //     a {
-        //         color: #000;
-        //     }
-        // }
-
         a {
             text-decoration: none;
             color: $nav-text-color;
@@ -149,94 +141,10 @@
 
 .welcome-text {
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
 
     .name {
-        display: inline-block;
         font-size: 4.5rem;
-        letter-spacing: .5rem;
-        text-transform: uppercase;
-        background: radial-gradient(
-          circle farthest-corner at center center,
-          #ccc,
-          #333
-        ) no-repeat;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: start 3s ease-in-out;
-
       }
-
-      .neon1 {
-        color: #ea9554;   
-        // font-family: 'Monoton', cursive;
-        font-family: 'Warnes', cursive;
-        // font-weight: 600;        
-        font-size: 1.8rem;        
-        position: absolute;        
-        top: 134px;        
-        left: 3px;
-
-        -webkit-animation: neon1 4s infinite;
-        -moz-animation: neon1 4s infinite;
-        animation: neon1 4s infinite;
-
-        // transition: all .5s;
-      }
-
-      .neon2 {
-        color: #ea9554;   
-        // font-family: 'Monoton', cursive; 
-        font-family: 'Warnes', cursive;      
-        // font-weight: 600;        
-        font-size: 1.8rem;        
-        position: absolute;        
-        top: 134px;        
-        left: 25px;
-
-        -webkit-animation: neon2 2s ease-in-out infinite alternate;
-        -moz-animation: neon2 2s ease-in-out infinite alternate;
-        animation: neon2 2s ease-in-out infinite alternate;
-
-        transition: all .5s;
-
-        &:hover {
-            color: #6d5669;
-            text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-            -webkit-animation: none;
-            -moz-animation: none;
-            animation: none;
-        }
-      }
-
-      .neon3 {
-        color: #ea9554;   
-        // font-family: 'Monoton', cursive; 
-        font-family: 'Warnes', cursive;      
-        // font-weight: 600;        
-        font-size: 1.8rem;        
-        position: absolute;        
-        top: 134px;        
-        left: 60px;
-
-        -webkit-animation: neon2 2s ease-in-out infinite alternate;
-        -moz-animation: neon2 2s ease-in-out infinite alternate;
-        animation: neon2 2s ease-in-out infinite alternate;
-
-        transition: all .5s;
-
-        &:hover {
-            color: #6d5669;
-            text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-            -webkit-animation: none;
-            -moz-animation: none;
-            animation: none;
-        }
-      }
-
 
       .logo {
 

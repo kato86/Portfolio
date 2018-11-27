@@ -26,18 +26,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         width: 100%;
+        height: 1000px;
+        background-color: #e6e6e6;
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
 
         .mouse-icon {
             position: absolute;
             bottom: 110px;
             opacity: .5;
             animation: mouse-icon 4s ease-in;
-
-            // &:hover {
-            //     opacity: 1;
-            // }
 
             svg:hover {
 
@@ -51,9 +49,10 @@
             }
         }
     }
+    
+    
 
     &__about {
-        height: 100vh;
         width: 100%;
 
         .row {

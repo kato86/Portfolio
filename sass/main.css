@@ -6,33 +6,6 @@
 1800++ Big desktop
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@-webkit-keyframes start {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px) scale(0.1);
-            transform: translateY(-100px) scale(0.1);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 5px -1px;
-    -webkit-transform: translateY(0px) scale(1);
-            transform: translateY(0px) scale(1);
-  }
-}
-@keyframes start {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px) scale(0.1);
-            transform: translateY(-100px) scale(0.1);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 5px -1px;
-    -webkit-transform: translateY(0px) scale(1);
-            transform: translateY(0px) scale(1);
-  }
-}
-
 @-webkit-keyframes arrow-down-show {
   0% {
     opacity: 0;
@@ -45,7 +18,6 @@
             transform: translate(0);
   }
 }
-
 @keyframes arrow-down-show {
   0% {
     opacity: 0;
@@ -102,230 +74,6 @@
   100% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-  }
-}
-
-@-webkit-keyframes neon1 {
-  0% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  1% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  4% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  7% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  8% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  12% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  22% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  23% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  26% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  28% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  34% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  36% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  42% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  55% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  60% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  63% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  67% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  72% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  73% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  76% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  78% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  84% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  86% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  96% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  100% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-}
-
-@keyframes neon1 {
-  0% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  1% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  4% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  7% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  8% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  12% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  22% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  23% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  26% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  28% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  34% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  36% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  42% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  55% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  60% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  63% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  67% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  72% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  73% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  76% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  78% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  84% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-  86% {
-    color: #6d5669;
-    text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  }
-  96% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 17px #ea9554, 0 0 38px #ea9554;
-  }
-  100% {
-    color: #ea9554;
-    text-shadow: 0 0 5px #ea9554, 0 0 10px #ea9554, 0 0 15px #ea9554, 0 0 20px #ea9554, 0 0 30px #ea9554, 0 0 40px #ea9554;
-  }
-}
-
-@-webkit-keyframes neon2 {
-  0% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea9554, 0 0 70px #ea9554, 0 0 80px #ea9554, 0 0 100px #ea9554, 0 0 150px #ea9554;
-  }
-  100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
-  }
-}
-
-@keyframes neon2 {
-  0% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea9554, 0 0 70px #ea9554, 0 0 80px #ea9554, 0 0 100px #ea9554, 0 0 150px #ea9554;
-  }
-  100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea9554, 0 0 35px #ea9554, 0 0 40px #ea9554, 0 0 50px #ea9554, 0 0 75px #ea9554;
   }
 }
 
@@ -537,13 +285,11 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  background: radial-gradient(circle closest-corner at center 125px, #222, black 60%) no-repeat;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+  background-color: #262626;
 }
 
 .heading-secondary {
@@ -929,67 +675,7 @@ footer {
 }
 
 .welcome-text .name {
-  display: inline-block;
   font-size: 4.5rem;
-  letter-spacing: .5rem;
-  text-transform: uppercase;
-  background: radial-gradient(circle farthest-corner at center center, #ccc, #333) no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: start 3s ease-in-out;
-          animation: start 3s ease-in-out;
-}
-
-.welcome-text .neon1 {
-  color: #ea9554;
-  font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 134px;
-  left: 3px;
-  -webkit-animation: neon1 4s infinite;
-  animation: neon1 4s infinite;
-}
-
-.welcome-text .neon2 {
-  color: #ea9554;
-  font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 134px;
-  left: 25px;
-  -webkit-animation: neon2 2s ease-in-out infinite alternate;
-  animation: neon2 2s ease-in-out infinite alternate;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.welcome-text .neon2:hover {
-  color: #6d5669;
-  text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  -webkit-animation: none;
-  animation: none;
-}
-
-.welcome-text .neon3 {
-  color: #ea9554;
-  font-family: 'Warnes', cursive;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 134px;
-  left: 60px;
-  -webkit-animation: neon2 2s ease-in-out infinite alternate;
-  animation: neon2 2s ease-in-out infinite alternate;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.welcome-text .neon3:hover {
-  color: #6d5669;
-  text-shadow: 0 0 3px #635861, 0 0 5px #635861;
-  -webkit-animation: none;
-  animation: none;
 }
 
 .welcome-text .logo img {
@@ -1262,8 +948,11 @@ main .parallax-window {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   width: 100%;
+  height: 1000px;
+  background-color: #e6e6e6;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
+          clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
 }
 
 .section__start .mouse-icon {
@@ -1283,7 +972,6 @@ main .parallax-window {
 }
 
 .section__about {
-  height: 100vh;
   width: 100%;
 }
 
