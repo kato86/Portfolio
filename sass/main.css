@@ -908,6 +908,15 @@ main .parallax-window {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7));
 }
 
+.clip-path {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 10% 0%);
+          clip-path: polygon(50% 0, 100% 0, 100% 100%, 10% 0%);
+  background-color: #e6e6e6;
+}
+
 .section-contener {
   height: 100%;
   position: relative;
@@ -939,6 +948,7 @@ main .parallax-window {
 }
 
 .section__start {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,10 +959,6 @@ main .parallax-window {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 1000px;
-  background-color: #e6e6e6;
-  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
-          clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
 }
 
 .section__start .mouse-icon {
@@ -971,10 +977,6 @@ main .parallax-window {
   stroke: #ea9554;
 }
 
-.section__about {
-  width: 100%;
-}
-
 .section__about .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -982,7 +984,6 @@ main .parallax-window {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 .section__about .row-left {
