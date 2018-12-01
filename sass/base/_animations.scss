@@ -37,17 +37,17 @@
             left: 125%;
         }
     }
-
-@keyframes mouse-icon {
-    0% {
-        opacity: 0;
-        transform: translateY(-5vh);
-    }
-    100% {
-        opacity: 0.5;
-        transform: translate(0);
-    }
-}
+// TODO: Chyba do usunięcia
+// @keyframes mouse-icon {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(-5vh);
+//     }
+//     100% {
+//         opacity: 0.5;
+//         transform: translate(0);
+//     }
+// }
 
 @keyframes line-cv-animation{
 
