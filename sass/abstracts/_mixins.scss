@@ -1,41 +1,9 @@
-// @mixin screen($size) {
-//     $desktop: "(min-width: 1024px)";
-//     $tablet: "(min-width: 768px)";
-//     $mobile: "(min-width: 460px)";
-//     @if $size == desktop {
-//       @media only screen and #{$desktop} {
-//         @content;
-//       }
-//     }
-//     @else if $size == tablet {
-//       @media only screen and #{$tablet} {
-//         @content;
-//       }
-//     }
-//     @else if $size == mobile {
-//       @media only screen and #{$mobile} {
-//         @content;
-//       }
-//     }
-//     @else {
-//       @media only screen and #{$size} {
-//         @content;
-//       }
-//     }
-//   }
-
 @mixin clearfix {
     &::after {
         content: '';
         display: table;
         clear: both;
     }
-}
-
-@mixin object($width, $height, $bg) {
-    width: $width;
-    height: $height;
-    background-color: $bg;
 }
 
 // MEDIA QUERY MANAGER

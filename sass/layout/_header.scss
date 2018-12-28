@@ -1,180 +1,94 @@
-//wysuwające się podkreślenie z lewej strony, po najechaniu na nawigację
-.left-underline {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow: hidden;
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 0;
-        background: $primary-color;
-        height: 4px;
-        -webkit-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 0.15s;
-        transition-duration: 0.15s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-
-    &:hover:before, &:focus:before, &:active:before {
-        right: 0;
-      }
-  }
-
-  .txt-change > .txt {
-      border-right: 0.2rem solid #777;
-  }
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .header {
-
-    @include object(100%, 70px, 'transparetn');
-
-    position: fixed;
-    z-index: 2;
-    transition: all 0.5s;
-
-
-
-    .logo {
-        float: left;
-        position: fixed;
-        font-size: 30px;
-
-
-        &-img {
-            width: 60px;
-            position: relative;
-            top: 13px;
-            left: 10px;
-            opacity: .7;
-            transition: all 0.5s;
-
-        }
-
-        span {
-            position: relative;
-            top: 6px;
-            left: 30px;
-            font-size: 20px;
-            color: $nav-text-color;
-            transition: all 0.5s;
-
-            @include respond(tab-port) {
-                display: none;
-            }
-
-        }
-    }
-
-    &--scroll {
-        box-shadow: 0 4px 30px -5px rgba(#000, 0.2);
-        height: 50px;
-        transition: all 0.3s;
-        background-color: $nav-bg-color;
-
-        
-        .logo {
-
-            &-img {
-                width: 50px;
-                top: 5px;
-            }
-            
-            &-text {
-                opacity: 0;
-            }
-        }
-
-        .navbar {
-            padding: 5px;
-        }
-    }
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 5px #262626;;
 }
 
 .navbar {
-    text-align: right;
-    padding: 20px;
-    transition: all 0.5s;
+  height: 100%;
 
+  &__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  
 
-    &-contener {
-        display: inline-flex;
-        flex-flow: row wrap;
-        list-style: none;
-        text-align: center;
-        
-    }
-
-    &-items {
-        display: inline-block;
-        padding: 10px;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin: 0 20px;
-        line-height: 18px;
+    &--items {
+      list-style: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 33.33%;
+      height: 100%;
+      text-align: center;
+      letter-spacing: 3px;
+      transition: all 0.5s;
 
         a {
-            text-decoration: none;
-            color: $nav-text-color;
-            font-size: 2.2rem;
+          display: block;
+          height: 100%;
+          position: relative;
+          top: 10px;
+          text-decoration: none;
+          font-size: 2.2rem;
+          color: inherit;
+        }
+
+        &:hover {
+          background-color: $primary-color;
         }
     }
 
     @include respond(phone) {
       display: none;
     }
+  }
 }
 
 .welcome-text {
     position: absolute;
+    top: 200px;
+    left: 120px;
 
     .name {
       display: block;
-      font-size: 4.5rem;
-      background: white;
-      width: 200px;
-      clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+      font-size: 5.5rem;
+      width: 400px;
       margin-bottom: 10px;
-      }
-      .surname {
-        display: block;
-        font-size: 4.5rem;
-        background: white;
-        width: 250px;
-        clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
-        }
-
-      .logo {
-
-        img {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            opacity: .7;
-        }
+      text-align: center;
+      letter-spacing: 30px;
+      border: 5px solid $primary-color;
+      font-weight: 600;
+      text-transform: uppercase;
     }
-}
+    .surname {
+      display: block;
+      font-size: 5.5rem;
+      width: 480px;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 25px;
+      border: 5px solid $primary-color;
+      margin-left: 40px;
+      text-transform: uppercase;
+    }
 
-canvas {
-    width: 100%;
-    height: 105vh;
-    position: absolute;
+        .web-dev-text {
+          display: inline-block;
+          position: relative;
+          top: 0px;
+          left: 40px;
+          font-size: 30px;
+          letter-spacing: 23px;
+          font-family: 'Playfair Display', 'Roboto', serif;
+          opacity: .8;
+        }
 }
 
 // burger menu
