@@ -33,81 +33,60 @@
             background-color: #4d4d4d;
         }
 
-        .row {
+        .about__container {
             display: flex;
-            align-items: center;
-
-
-            &-left {
-                flex: 1;
-                position: relative;
-                top: 75px;
-                height: 80%;
-
-                .section-about_photo {
-                    position: relative;
+            align-items: center;  
             
-                    img {
-                        width: 40rem;
-                        border-radius: 30px;
-                        margin-left: 90px;
+            position: absolute;
+            height: 100%;
 
-                        @include respond(tab-port) {
-                            width: 220px;
-                            height: 290px;
-                            border-radius: 30px;
-                            margin-left: 0;
-                        }
-                        @include respond(phone) {
-                            width: 150px;
-                            height: 190px;
-                            border-radius: 30px;
-                            margin-left: 0;
-                        }
-                    }
-                }
-
-                @include respond(tab-port) {
-                    flex: 0;
-                    padding: 20px 5px 5px 5px;
-                }
-                @include respond(phone) {
-                    flex: 0;
-                    padding: 30px 10px 10px 10px;
-                }
-            }
-
-            &-right {
+            .about--photo {
                 flex: 1;
-                position: relative;
-                top: 10px;
-                height: 80%;
-                padding: 50px;
-                overflow-y: auto;
-
-                @include respond(tab-port) {
-                    padding: 8px;
-                    top: 100px;
-                }
-                @include respond(phone) {
-                    padding: 0;
-                }
-
-                .section-about_text {
-            
-                    p {
-                        font-size: 2.4rem;
-
-                        @include respond(tab-port) {
-                            padding: 10px 30px 20px 30px;
-                        }
-                        @include respond(phone) {
-                            padding: 10px 30px 20px 30px;
-                        }
-                    }
         
+                img {
+                    width: 40rem;
+                    border-radius: 30px;
+                    margin-left: 90px;
+
+                    @include respond(tab-port) {
+                        width: 220px;
+                        height: 290px;
+                        border-radius: 30px;
+                        margin-left: 0;
+                    }
+                    @include respond(phone) {
+                        width: 150px;
+                        height: 190px;
+                        border-radius: 30px;
+                        margin-left: 0;
+                    }
                 }
             }
+
+            @include respond(tab-port) {
+                flex: 0;
+                padding: 20px 5px 5px 5px;
+            }
+            @include respond(phone) {
+                flex: 0;
+                padding: 30px 10px 10px 10px;
+            }            
+
+            .about--text {
+                flex: 1;
+                p {
+                    font-size: 2.4rem;
+
+                    @include respond(tab-port) {
+                        padding: 10px 30px 20px 30px;
+                    }
+                    @include respond(phone) {
+                        padding: 10px 30px 20px 30px;
+                    }
+                }
+    
+            }
+            
             @include respond(tab-port) {
                 flex-direction: column;
             }
