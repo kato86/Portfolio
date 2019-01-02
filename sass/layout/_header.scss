@@ -7,7 +7,36 @@
   z-index: 2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  box-shadow: 0px 0px 5px #262626;;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 40%;
+
+  &__icon { 
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    transition: all .2s ease-out;
+    color: $primary-text-color;
+    border: 2px solid $primary-color;
+    border-left: none;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      width: 90px;
+    }
+  }
+
+  .active {
+    width: 90px;
+  }
 }
 
 .navbar {
@@ -67,6 +96,7 @@
       border: 5px solid $primary-color;
       font-weight: 600;
       text-transform: uppercase;
+      background-color: #2b2727;
     }
     .surname {
       display: block;
@@ -78,6 +108,7 @@
       border: 5px solid $primary-color;
       margin-left: 40px;
       text-transform: uppercase;
+      background-color: #2b2727;
     }
 
         .web-dev-text {
