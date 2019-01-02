@@ -283,6 +283,31 @@ body {
   padding: 20px;
 }
 
+.page-number {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  font-size: 40px;
+}
+
+.page-number .span--1 {
+  position: relative;
+  top: -20px;
+  left: 15px;
+  font-size: 60px;
+}
+
+.page-number .span--2 {
+  color: #ea9554;
+}
+
+.page-number .span--3 {
+  position: relative;
+  top: 15px;
+  left: -8px;
+  font-size: 25px;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -543,10 +568,16 @@ footer {
 }
 
 .navbar__list--items a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
-  position: relative;
-  top: 10px;
   text-decoration: none;
   font-size: 2.2rem;
   color: inherit;
@@ -831,7 +862,10 @@ main .parallax-window {
   bottom: 0;
   -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 80% 100%);
   clip-path: polygon(20% 0, 100% 0%, 100% 100%, 80% 100%);
-  background-color: #4d4d4d;
+  background-image: url("/picture/daniel-james-1251706-unsplash (Photo by Daniel James on Unsplash).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section__about {
@@ -848,7 +882,10 @@ main .parallax-window {
   bottom: 0;
   -webkit-clip-path: polygon(80% 100%, 100% 100%, 100% -33%, 20% 100%);
   clip-path: polygon(80% 100%, 100% 100%, 100% -33%, 20% 100%);
-  background-color: #4d4d4d;
+  background-image: url("/picture/frank-mckenna-140054-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section__about .about__container {
@@ -965,6 +1002,9 @@ main .parallax-window {
   bottom: 0;
   -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 80% 100%);
   clip-path: polygon(20% 0, 100% 0%, 100% 100%, 80% 100%);
-  background-color: #4d4d4d;
+  background-image: url("/picture/ben-klea-1218706-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
