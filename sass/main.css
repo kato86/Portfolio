@@ -943,7 +943,7 @@ main .parallax-window {
 .section__about .about__container .about--photo img {
   width: 40rem;
   border-radius: 30px;
-  margin-left: 90px;
+  margin-left: 20%;
 }
 
 @media (max-width: 900px) {
