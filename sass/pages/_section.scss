@@ -1,30 +1,80 @@
 .section {
 
     &__start {
+        display: flex;
         position: relative;
         width: 100vw;
         height: 60vh;
         background-color: #3A6D94;
+        padding-top: 50px;
+
+        .welcome-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name {
+              display: block;
+              font-size: 5.5rem;
+              width: 400px;
+              margin-bottom: 10px;
+              text-align: center;
+              letter-spacing: 30px;
+              border: 5px solid #ADB5BD;
+              font-weight: 600;
+              text-transform: uppercase;
+              background-color: #173761;
+            }
+            .surname {
+              display: block;
+              font-size: 5.5rem;
+              width: 480px;
+              text-align: center;
+              font-weight: bold;
+              letter-spacing: 25px;
+              border: 5px solid #ADB5BD;
+              text-transform: uppercase;
+              background-color: #173761;
+            }
+        
+            .web-dev-text {
+                display: inline-block;
+                position: relative;
+                top: 0px;
+                font-size: 20px;
+                width: 100%;
+                text-align: center;
+                letter-spacing: 23px;
+                font-family: 'Playfair Display', 'Roboto', serif;
+                opacity: .8;
+            }
+        }
+        
 
         .start--photo {
-    
+            border: 2px solid red;
+            flex: 1;
+
             img {
                 width: 40rem;
                 border-radius: 30px;
                 margin-left: 20%;
+                background-image: url("./../../picture/me_small.jpg");
 
-                @include respond(tab-port) {
-                    width: 220px;
-                    height: 290px;
-                    border-radius: 30px;
-                    margin-left: 0;
-                }
-                @include respond(phone) {
-                    width: 150px;
-                    height: 190px;
-                    border-radius: 30px;
-                    margin-left: 0;
-                }
+                // @include respond(tab-port) {
+                //     width: 220px;
+                //     height: 290px;
+                //     border-radius: 30px;
+                //     margin-left: 0;
+                // }
+                // @include respond(phone) {
+                //     width: 150px;
+                //     height: 190px;
+                //     border-radius: 30px;
+                //     margin-left: 0;
+                // }
             }
         }
 
