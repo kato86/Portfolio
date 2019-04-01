@@ -1,4 +1,3 @@
-// funkcja płynnie przewijająca stronę
 (function ($) {
     $.fn.arctic_scroll = function (options) {
 
@@ -31,18 +30,3 @@ $(function(){
         speed: 600
     });
 });
-// koniec funkcji przewijającej
-
-// Zmiana wysokości paska w trakcie scrollowania
-
-// burger menu
-$('#toggle').click(function() {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-});
-
-$('.a-burger').click(function() {
-    $('#toggle').toggleClass('active');
-    $('#overlay').toggleClass('open');
-
-})
