@@ -889,6 +889,7 @@ main .parallax-window {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  text-align: center;
 }
 
 .section__start--photo img {
