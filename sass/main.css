@@ -827,7 +827,7 @@ main .parallax-window {
   padding-top: 50px;
 }
 
-.section__start .welcome-text {
+.section__start--text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -846,7 +846,7 @@ main .parallax-window {
           align-items: center;
 }
 
-.section__start .welcome-text .name {
+.section__start--text .name {
   display: block;
   font-size: 5.5rem;
   width: 400px;
@@ -854,12 +854,13 @@ main .parallax-window {
   text-align: center;
   letter-spacing: 30px;
   border: 5px solid #ADB5BD;
+  border-radius: 3px;
   font-weight: 600;
   text-transform: uppercase;
   background-color: #173761;
 }
 
-.section__start .welcome-text .surname {
+.section__start--text .surname {
   display: block;
   font-size: 5.5rem;
   width: 480px;
@@ -867,11 +868,12 @@ main .parallax-window {
   font-weight: bold;
   letter-spacing: 25px;
   border: 5px solid #ADB5BD;
+  border-radius: 3px;
   text-transform: uppercase;
   background-color: #173761;
 }
 
-.section__start .welcome-text .web-dev-text {
+.section__start--text .web-dev-text {
   display: inline-block;
   position: relative;
   top: 0px;
@@ -883,18 +885,18 @@ main .parallax-window {
   opacity: .8;
 }
 
-.section__start .start--photo {
-  border: 2px solid red;
+.section__start--photo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.section__start .start--photo img {
-  width: 40rem;
-  border-radius: 30px;
-  margin-left: 20%;
-  background-image: url("./../../picture/me_small.jpg");
+.section__start--photo img {
+  margin: 30px;
+  height: 100%;
+  -webkit-box-shadow: 0 0 0px 15px #173761;
+          box-shadow: 0 0 0px 15px #173761;
+  border-radius: 3px;
 }
 
 .section__about {
