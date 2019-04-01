@@ -3,16 +3,31 @@
     &__start {
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 60vh;
+        background-color: #3A6D94;
 
-        .clip-path {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #4d4d4d;
+        .start--photo {
+    
+            img {
+                width: 40rem;
+                border-radius: 30px;
+                margin-left: 20%;
+
+                @include respond(tab-port) {
+                    width: 220px;
+                    height: 290px;
+                    border-radius: 30px;
+                    margin-left: 0;
+                }
+                @include respond(phone) {
+                    width: 150px;
+                    height: 190px;
+                    border-radius: 30px;
+                    margin-left: 0;
+                }
+            }
         }
+
     }   
 
     &__about {
@@ -20,44 +35,11 @@
         width: 100vw;
         height: 100vh;
 
-        .clip-path {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #4d4d4d;
-        }
-
         .about__container {
             display: flex;
-            align-items: center;  
-            
+            align-items: center;              
             position: absolute;
             height: 100%;
-
-            .about--photo {
-                flex: 1;
-        
-                img {
-                    width: 40rem;
-                    border-radius: 30px;
-                    margin-left: 20%;
-
-                    @include respond(tab-port) {
-                        width: 220px;
-                        height: 290px;
-                        border-radius: 30px;
-                        margin-left: 0;
-                    }
-                    @include respond(phone) {
-                        width: 150px;
-                        height: 190px;
-                        border-radius: 30px;
-                        margin-left: 0;
-                    }
-                }
-            }
 
             @include respond(tab-port) {
                 flex: 0;
@@ -96,18 +78,7 @@
         position: relative;
         height: 100vh;
         width: 100vw;
-        text-align: center;
-
-        .clip-path {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #4d4d4d;
-        }
-
-        
+        text-align: center;        
     }
 
 
