@@ -17,26 +17,3 @@
     font-size: 2rem;
     padding: 20px;
 }
-
-.page-number {
-            position: fixed;
-            bottom: 100px;
-            right: 100px;
-            font-size: 40px;
-
-            .span--1 {
-                position: relative;
-                top: -20px;
-                left: 15px;
-                font-size: 60px;
-            }
-            .span--2 {
-                color: $primary-color;
-            }
-            .span--3 {
-                position: relative;
-                top: 15px;
-                left: -8px;
-                font-size: 25px;
-            }
-        }
