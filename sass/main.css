@@ -921,7 +921,29 @@ main .parallax-window {
   width: 200px;
   height: 300px;
   border-radius: 5px;
-  border: 2px solid #ADB5BD;
+  border: 4px solid #3A6D94;
+  z-index: 1;
+}
+
+.section__technology--container .icon-box ion-icon {
+  font-size: 20px;
+  width: 60%;
+  height: 60%;
+  color: #ADB5BD;
+  position: relative;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.section__technology--container .icon-box:hover ion-icon {
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  width: 50%;
+  height: 50%;
 }
 
 .section__about {
