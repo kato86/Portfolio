@@ -94,23 +94,39 @@
             margin: auto;
 
             .icon-box {
+                position: relative;
                 width: 200px;
                 height: 300px;
                 border-radius: 5px;
                 border: 4px solid #3A6D94;
                 z-index: 1;
+                overflow: hidden;
 
                 ion-icon {
+                    position: absolute;
                     font-size: 20px;
                     width: 60%;
                     height: 60%;
                     color: #ADB5BD;
-                    position: relative;
                     left: 50%;
                     top: 40%;
                     transform: translate(-50%, -50%);
-                    transition: all .3s;
+                    transition: all .4s;
                 }
+
+            
+            }
+            .icon-details {
+                position: absolute;
+                bottom: -120px;
+                width: 100%;
+                height: 40%;
+                transition: all .4s;
+                font-size: 22px;
+                text-align: center;
+                padding-top: 20px;
+                background-color: #3A6D94; 
+                border-radius: 15px 15px 0 0;
             }
 
             .icon-box:hover {
@@ -118,6 +134,10 @@
                     transform: translate(-50%, -80%);
                     width: 50%;
                     height: 50%;
+                }
+
+                .icon-details {
+                    bottom: 0;
                 }
             }
         }
