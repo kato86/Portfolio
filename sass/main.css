@@ -989,6 +989,7 @@ main .parallax-window {
   height: 300px;
   border-radius: 5px;
   border: 4px solid #3A6D94;
+  margin: 20px 10px;
   z-index: 1;
   overflow: hidden;
 }
