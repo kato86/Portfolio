@@ -3,7 +3,6 @@
     &__start {
         display: flex;
         position: relative;
-        width: 100vw;
         height: 60vh;
         background-color: #3A6D94;
         padding-top: 50px;
@@ -171,41 +170,24 @@
 
     &__about {
 
-        .about__container {
-            display: flex;
-            align-items: center;              
+        &--container {
             position: relative;
-            min-height: 60vh;
-            top: 150px;
-
-            @include respond(tab-port) {
-                flex: 0;
-                padding: 20px 5px 5px 5px;
-            }
-            @include respond(phone) {
-                flex: 0;
-                padding: 30px 10px 10px 10px;
-            }            
-
-            .about--text {
-                flex: 1;
-                p {
-                    font-size: 2.4rem;
-
-                    @include respond(tab-port) {
-                        padding: 10px 30px 20px 30px;
-                    }
-                    @include respond(phone) {
-                        padding: 10px 30px 20px 30px;
-                    }
-                }    
-            }            
+            top: 300px;
+            background-color: #3A6D94;
         }
+
+        &--text {
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            p {
+                font-size: 2.4rem;
+            }    
+        }  
     }
 
     &__contact {
         position: relative;
-        width: 100vw;
         text-align: center;        
     }
 
