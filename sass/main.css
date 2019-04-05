@@ -852,6 +852,21 @@ main .parallax-window {
   font-weight: 600;
   text-transform: uppercase;
   background-color: #173761;
+  padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .section__start--text .name {
+    width: 350px;
+    letter-spacing: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__start--text .name {
+    width: 283px;
+    letter-spacing: 20px;
+  }
 }
 
 .section__start--text .surname {
@@ -865,6 +880,21 @@ main .parallax-window {
   border-radius: 3px;
   text-transform: uppercase;
   background-color: #173761;
+  padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .section__start--text .surname {
+    width: 420px;
+    letter-spacing: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__start--text .surname {
+    width: 365px;
+    letter-spacing: 20px;
+  }
 }
 
 .section__start--text .web-dev-text {
@@ -877,6 +907,19 @@ main .parallax-window {
   letter-spacing: 23px;
   font-family: 'Playfair Display', 'Roboto', serif;
   opacity: .8;
+  padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .section__start--text .web-dev-text {
+    letter-spacing: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__start--text .web-dev-text {
+    letter-spacing: 15px;
+  }
 }
 
 .section__start--photo {
@@ -888,10 +931,24 @@ main .parallax-window {
 
 .section__start--photo img {
   margin: 30px;
-  height: 100%;
+  height: 650px;
   -webkit-box-shadow: 0 0 0px 15px #173761;
           box-shadow: 0 0 0px 15px #173761;
   border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .section__start--photo img {
+    height: 465px;
+    margin-top: 77px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__start--photo img {
+    height: 444px;
+    margin-top: 90px;
+  }
 }
 
 .section__technology {
