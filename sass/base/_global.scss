@@ -1,19 +1,16 @@
-// import czcionki Roboto
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-// nagłówki sekcji
 .heading-secondary {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
     padding: 10px;
-    border-left: 15px solid $primary-color;
+    // border-left: 15px solid $primary-color;
     display: inline-block;
 }
 
-// małe nagłówki w sekcjach
 .heading-small {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
     padding: 20px;
 }
