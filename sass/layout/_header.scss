@@ -143,16 +143,16 @@
     }
     
     span {
-    background: $primary-color;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition:  all .35s ease;
-    cursor: pointer;
-      
+      background: $primary-color;
+      border: none;
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  all .35s ease;
+      cursor: pointer;
+    
       &:nth-of-type(2) {
         top: 11px;
       }
@@ -161,10 +161,10 @@
         top: 22px;
       }
     }
-    
-    @include respond (phone) {
-      display: block;
-    }
+    // TODO: Tymczasowo wyłączony burger
+    // @include respond (phone) {
+    //   display: block;
+    // }
   }
 
 .overlay {
@@ -235,10 +235,10 @@
           overflow: hidden;
           
           &:hover:after,
-           &:focus:after,
-           &:active:after {
-             width: 100%;
-           }
+          &:focus:after,
+          &:active:after {
+              width: 100%;
+          }
           
           &:after {
             content: '';
