@@ -941,6 +941,17 @@ main .parallax-window {
   transition: all .4s;
 }
 
+.section__technology--container .icon-box:hover ion-icon {
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  width: 50%;
+  height: 50%;
+}
+
+.section__technology--container .icon-box:hover .icon-details {
+  bottom: 0;
+}
+
 .section__technology--container .icon-details {
   position: absolute;
   bottom: -120px;
@@ -952,18 +963,6 @@ main .parallax-window {
   text-align: center;
   padding-top: 20px;
   background-color: #3A6D94;
-  border-radius: 15px 15px 0 0;
-}
-
-.section__technology--container .icon-box:hover ion-icon {
-  -webkit-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
-  width: 50%;
-  height: 50%;
-}
-
-.section__technology--container .icon-box:hover .icon-details {
-  bottom: 0;
 }
 
 .section__about {
