@@ -103,6 +103,14 @@
                     height: 444px;
                     margin-top: 90px;
                 }
+                @include respond (phone) {
+                    height: 380px;
+                    margin-top: 90px;
+                }
+                @include respond (small-screen) {
+                    height: 300px;
+                    margin-top: 40px;
+                }
             }
         }
         @include respond(tab-port) {
@@ -142,6 +150,11 @@
                     top: 40%;
                     transform: translate(-50%, -50%);
                     transition: all .4s;
+
+                    @include respond (small-screen) {
+                        width: 50%;
+                        height: 50%;
+                    }
                 }
 
                 &:hover {
@@ -170,6 +183,10 @@
                 padding-top: 20px;
                 background-color: #3A6D94; 
             }
+        }
+
+        @include respond (small-screen) {
+            top: 100px;
         }
     }
 

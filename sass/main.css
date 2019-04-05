@@ -956,6 +956,20 @@ main .parallax-window {
   }
 }
 
+@media (max-width: 600px) {
+  .section__start--photo img {
+    height: 380px;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section__start--photo img {
+    height: 300px;
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 900px) {
   .section__start {
     -webkit-box-orient: vertical;
@@ -1008,6 +1022,13 @@ main .parallax-window {
   transition: all .4s;
 }
 
+@media (max-width: 450px) {
+  .section__technology--container .icon-box ion-icon {
+    width: 50%;
+    height: 50%;
+  }
+}
+
 .section__technology--container .icon-box:hover ion-icon {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
@@ -1030,6 +1051,12 @@ main .parallax-window {
   text-align: center;
   padding-top: 20px;
   background-color: #3A6D94;
+}
+
+@media (max-width: 450px) {
+  .section__technology {
+    top: 100px;
+  }
 }
 
 .section__about--container {
