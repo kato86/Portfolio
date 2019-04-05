@@ -686,12 +686,6 @@ footer {
   top: 22px;
 }
 
-@media (max-width: 600px) {
-  .button_container {
-    display: block;
-  }
-}
-
 .overlay {
   position: fixed;
   background: white;
