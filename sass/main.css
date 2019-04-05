@@ -897,6 +897,7 @@ main .parallax-window {
 .section__technology {
   position: relative;
   top: 200px;
+  min-height: 40vh;
 }
 
 .section__technology--container {
@@ -959,12 +960,6 @@ main .parallax-window {
   background-color: #3A6D94;
 }
 
-.section__about {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
 .section__about .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,8 +967,9 @@ main .parallax-window {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  height: 100%;
+  position: relative;
+  min-height: 60vh;
+  top: 150px;
 }
 
 @media (max-width: 900px) {
@@ -1016,27 +1012,8 @@ main .parallax-window {
   }
 }
 
-@media (max-width: 900px) {
-  .section__about .about__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .section__about .about__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .section__contact {
   position: relative;
-  height: 100vh;
   width: 100vw;
   text-align: center;
 }
