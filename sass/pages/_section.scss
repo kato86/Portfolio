@@ -193,6 +193,12 @@
                 text-align: center;
                 padding-top: 20px;
                 background-color: #415B76; 
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                }
             }
         }
         @include respond(small-screen) {
