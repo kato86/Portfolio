@@ -793,23 +793,19 @@ footer {
   transition: .35s;
 }
 
-main {
-  background: inherit;
-}
-
-main .heading-primary--main {
+.heading-primary--main {
   font-size: 50px;
   text-transform: uppercase bold;
   letter-spacing: 2px;
 }
 
-main .heading-primary--sub {
+.heading-primary--sub {
   font-size: 30px;
   text-transform: lowercase;
   letter-spacing: 3px;
 }
 
-main .parallax-window {
+.parallax-window {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7));
