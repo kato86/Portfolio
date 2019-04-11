@@ -519,6 +519,12 @@ footer {
   transition: all 0.5s;
 }
 
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
