@@ -292,6 +292,7 @@ body {
 @media (max-width: 450px) {
   .heading-small {
     font-size: 22px;
+    padding: 0;
   }
 }
 

@@ -26,5 +26,6 @@
 
     @include respond(small-screen) {
         font-size: 22px;
+        padding: 0;
     }
 }
