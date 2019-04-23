@@ -1009,6 +1009,21 @@ footer {
   }
 }
 
+.section__about--container {
+  position: relative;
+  top: 100px;
+}
+
+.section__about--text {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.section__about--text p {
+  font-size: 2.4rem;
+}
+
 .section__technology {
   position: relative;
   top: 130px;
@@ -1025,6 +1040,8 @@ footer {
       justify-content: space-around;
   width: 97%;
   margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7B9BA6));
+  background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
 }
 
 .section__technology--container .icon-box {
@@ -1092,22 +1109,5 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 16px;
-}
-
-.section__about--container {
-  position: relative;
-  top: 300px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7B9BA6));
-  background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
-}
-
-.section__about--text {
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-}
-
-.section__about--text p {
-  font-size: 2.4rem;
 }
 /*# sourceMappingURL=main.css.map */

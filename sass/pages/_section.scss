@@ -132,6 +132,23 @@
             padding-top: 0px;
         }
     }  
+
+    &__about {
+
+        &--container {
+            position: relative;
+            top: 100px;
+        }
+
+        &--text {
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            p {
+                font-size: 2.4rem;
+            }    
+        }  
+    }
     
     &__technology {
         position: relative;
@@ -144,6 +161,7 @@
             justify-content: space-around;
             width: 97%;
             margin: auto;
+            background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
 
             .icon-box {
                 position: relative;
@@ -205,27 +223,6 @@
                 }
             }
         }
-    }
-
-
-    &__about {
-
-        &--container {
-            position: relative;
-            top: 300px;
-            // background-color: #7B9BA6;
-            background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
-
-        }
-
-        &--text {
-            padding: 20px;
-            width: 80%;
-            margin: auto;
-            p {
-                font-size: 2.4rem;
-            }    
-        }  
     }
 
     // &__contact {
