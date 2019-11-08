@@ -185,8 +185,9 @@
                     transition: all .4s;
 
                     @include respond (small-screen) {
-                        width: 50%;
-                        height: 50%;
+                        width: 40%;
+                        height: 40%;
+                        top: 70px;
                     }
                 }
 
@@ -200,9 +201,10 @@
                     .icon-details {
                         bottom: 0;
                     }
-                }
-
-            
+                }   
+                @include respond (small-screen) {
+                    height: 250px;
+                }         
             }
 
             .icon-details {

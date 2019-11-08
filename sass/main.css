@@ -1071,8 +1071,9 @@ footer {
 
 @media (max-width: 450px) {
   .section__technology--container .icon-box ion-icon {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
+    top: 70px;
   }
 }
 
@@ -1085,6 +1086,12 @@ footer {
 
 .section__technology--container .icon-box:hover .icon-details {
   bottom: 0;
+}
+
+@media (max-width: 450px) {
+  .section__technology--container .icon-box {
+    height: 250px;
+  }
 }
 
 .section__technology--container .icon-details {
