@@ -1038,7 +1038,7 @@ footer {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 97%;
+  width: 100%;
   margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7B9BA6));
   background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
