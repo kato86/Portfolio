@@ -185,9 +185,9 @@
                     transition: all .4s;
 
                     @include respond (small-screen) {
-                        width: 40%;
-                        height: 40%;
-                        top: 70px;
+                        width: 50%;
+                        height: 50%;
+                        transform: translate(-50%, -80%);
                     }
                 }
 

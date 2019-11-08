@@ -1071,9 +1071,10 @@ footer {
 
 @media (max-width: 450px) {
   .section__technology--container .icon-box ion-icon {
-    width: 40%;
-    height: 40%;
-    top: 70px;
+    width: 50%;
+    height: 50%;
+    -webkit-transform: translate(-50%, -80%);
+            transform: translate(-50%, -80%);
   }
 }
 
