@@ -1117,4 +1117,10 @@ footer {
           flex-direction: column;
   font-size: 16px;
 }
+
+@media (max-width: 450px) {
+  .section__technology--container .icon-details {
+    bottom: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
