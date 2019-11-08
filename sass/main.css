@@ -1122,6 +1122,7 @@ footer {
 @media (max-width: 450px) {
   .section__technology--container .icon-details {
     bottom: 0;
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
