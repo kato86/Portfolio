@@ -1076,10 +1076,10 @@ footer {
   transition: all .4s;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
   .section__technology--container .icon-box ion-icon {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     -webkit-transform: translate(-50%, -80%);
             transform: translate(-50%, -80%);
   }
@@ -1088,8 +1088,8 @@ footer {
 .section__technology--container .icon-box:hover ion-icon {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .section__technology--container .icon-box:hover .icon-details {
@@ -1126,9 +1126,14 @@ footer {
   font-size: 16px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
   .section__technology--container .icon-details {
     bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .section__technology--container .icon-details {
     padding-top: 10px;
   }
 }
