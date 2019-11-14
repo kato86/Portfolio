@@ -127,6 +127,7 @@
         }
         @include respond(tab-port) {
             flex-direction: column;
+            display: inline;
         }
         @include respond(phone) {
             padding-top: 0px;
@@ -138,6 +139,10 @@
         &--container {
             position: relative;
             top: 100px;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
         }
 
         &--text {
@@ -228,6 +233,10 @@
                     padding-top: 10px;
                 }
             }
+        }
+
+        @include respond(tab-port) {
+            top: 0;
         }
     }
 

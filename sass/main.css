@@ -1000,6 +1000,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: inline;
   }
 }
 
@@ -1012,6 +1013,12 @@ footer {
 .section__about--container {
   position: relative;
   top: 100px;
+}
+
+@media (max-width: 900px) {
+  .section__about--container {
+    top: 0;
+  }
 }
 
 .section__about--text {
@@ -1123,6 +1130,12 @@ footer {
   .section__technology--container .icon-details {
     bottom: 0;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__technology {
+    top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
