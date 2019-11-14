@@ -1060,6 +1060,7 @@ footer {
   margin: 20px 10px;
   z-index: 1;
   overflow: hidden;
+  text-align: center;
 }
 
 .section__technology--container .icon-box ion-icon {
@@ -1085,11 +1086,26 @@ footer {
   }
 }
 
+.section__technology--container .icon-box i {
+  position: relative;
+  font-size: 100px;
+  color: #CDD6D5;
+  top: 10%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
 .section__technology--container .icon-box:hover ion-icon {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
   width: 40%;
   height: 40%;
+}
+
+.section__technology--container .icon-box:hover i {
+  -webkit-transform: translate(0%, -15%);
+          transform: translate(0%, -15%);
+  font-size: 70px;
 }
 
 .section__technology--container .icon-box:hover .icon-details {

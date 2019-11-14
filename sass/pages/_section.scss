@@ -177,6 +177,7 @@
                 margin: 20px 10px;
                 z-index: 1;
                 overflow: hidden;
+                text-align: center;
 
                 ion-icon {
                     position: absolute;
@@ -196,11 +197,24 @@
                     }
                 }
 
+                i {
+                    position: relative;
+                    font-size: 100px;
+                    color: #CDD6D5;
+                    top: 10%;
+                    transition: all .4s;   
+                }
+
                 &:hover {
                     ion-icon {
                         transform: translate(-50%, -80%);
                         width: 40%;
                         height: 40%;
+                    }
+
+                    i {
+                        transform: translate(0%, -15%);
+                        font-size: 70px;
                     }
     
                     .icon-details {
