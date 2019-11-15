@@ -1095,6 +1095,14 @@ footer {
   transition: all .4s;
 }
 
+@media (max-width: 900px) {
+  .section__technology--container .icon-box i {
+    font-size: 70px;
+    -webkit-transform: translate(0%, 10%);
+            transform: translate(0%, 10%);
+  }
+}
+
 .section__technology--container .icon-box:hover ion-icon {
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
@@ -1103,8 +1111,6 @@ footer {
 }
 
 .section__technology--container .icon-box:hover i {
-  -webkit-transform: translate(0%, -15%);
-          transform: translate(0%, -15%);
   font-size: 70px;
 }
 
