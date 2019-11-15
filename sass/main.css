@@ -819,8 +819,8 @@ footer {
   display: flex;
   position: relative;
   height: 60vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #7B9BA6), to(#233656));
-  background: linear-gradient(to bottom, #7B9BA6 65%, #233656);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #7b9ba6), to(#233656));
+  background: linear-gradient(to bottom, #7b9ba6 65%, #233656);
   padding-top: 50px;
 }
 
@@ -850,7 +850,7 @@ footer {
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: 30px;
-  border: 5px solid #CDD6D5;
+  border: 5px solid #cdd6d5;
   border-radius: 3px;
   font-weight: 600;
   text-transform: uppercase;
@@ -886,7 +886,7 @@ footer {
   text-align: center;
   font-weight: bold;
   letter-spacing: 25px;
-  border: 5px solid #CDD6D5;
+  border: 5px solid #cdd6d5;
   border-radius: 3px;
   text-transform: uppercase;
   background-color: #233656;
@@ -922,8 +922,8 @@ footer {
   width: 100%;
   text-align: center;
   letter-spacing: 23px;
-  font-family: 'Playfair Display', 'Roboto', serif;
-  opacity: .8;
+  font-family: "Playfair Display", "Roboto", serif;
+  opacity: 0.8;
   padding-left: 20px;
 }
 
@@ -1047,8 +1047,8 @@ footer {
       justify-content: space-around;
   width: 100%;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7B9BA6));
-  background: linear-gradient(to bottom, #233656, #7B9BA6 65%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7b9ba6));
+  background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 }
 
 .section__technology--container .icon-box {
@@ -1056,7 +1056,7 @@ footer {
   width: 200px;
   height: 300px;
   border-radius: 5px;
-  border: 4px solid #CDD6D5;
+  border: 4px solid #cdd6d5;
   margin: 20px 10px;
   z-index: 1;
   overflow: hidden;
@@ -1068,13 +1068,13 @@ footer {
   font-size: 20px;
   width: 60%;
   height: 60%;
-  color: #CDD6D5;
+  color: #cdd6d5;
   left: 50%;
   top: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 900px) {
@@ -1089,10 +1089,10 @@ footer {
 .section__technology--container .icon-box i {
   position: relative;
   font-size: 100px;
-  color: #CDD6D5;
+  color: #cdd6d5;
   top: 10%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 900px) {
@@ -1129,12 +1129,12 @@ footer {
   bottom: -120px;
   width: 100%;
   height: 40%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   font-size: 22px;
   text-align: center;
   padding-top: 20px;
-  background-color: #415B76;
+  background-color: #415b76;
 }
 
 .section__technology--container .icon-details span {
