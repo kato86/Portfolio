@@ -260,7 +260,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #EEF4F2;
-  background-color: #233656;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -819,8 +819,6 @@ footer {
   display: flex;
   position: relative;
   height: 60vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #7b9ba6), to(#233656));
-  background: linear-gradient(to bottom, #7b9ba6 65%, #233656);
   padding-top: 50px;
 }
 
@@ -1047,8 +1045,6 @@ footer {
       justify-content: space-around;
   width: 100%;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7b9ba6));
-  background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 }
 
 .section__technology--container .icon-box {
