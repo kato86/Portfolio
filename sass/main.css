@@ -259,8 +259,8 @@ body {
   font-family: 'Roboto', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #ccc;
-  background-color: #000;
+  color: #EEF4F2;
+  background-color: #233656;
   overflow-x: hidden;
 }
 
@@ -601,6 +601,7 @@ footer {
 
 .navbar__list--items:hover {
   font-weight: 700;
+  background-color: #7b9ba6;
 }
 
 @media (max-width: 600px) {
@@ -819,6 +820,8 @@ footer {
   position: relative;
   height: 60vh;
   padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #7b9ba6), to(#233656));
+  background: linear-gradient(to bottom, #7b9ba6 65%, #233656);
 }
 
 .section__start--text {
@@ -1044,6 +1047,8 @@ footer {
       justify-content: space-around;
   width: 100%;
   margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7b9ba6));
+  background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 }
 
 .section__technology--container .icon-box {
