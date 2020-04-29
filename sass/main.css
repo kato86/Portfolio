@@ -817,7 +817,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 60vh;
   padding-top: 50px;
 }
 
