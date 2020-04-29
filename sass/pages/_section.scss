@@ -102,8 +102,11 @@
     }
 
     &--photo {
-      flex: 1;
-      text-align: center;
+      background-image: url("../../picture/me_small.jpg");
+      background-repeat: no-repeat;
+      background-color: #cccccc;
+      // flex: 1;
+      // text-align: center;
 
       img {
         margin: 30px;
