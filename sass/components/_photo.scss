@@ -1,3 +1,6 @@
 .photo {
-  border: 2px solid white;
+  &__shape {
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(32% at 50% 35%);
+  }
 }
