@@ -1,6 +1,14 @@
 .photo {
+  position: absolute;
+  right: 10rem;
+  top: 5rem;
+
   &__shape {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(32% at 50% 35%);
+  }
+
+  &__img {
+    width: 40rem;
   }
 }
