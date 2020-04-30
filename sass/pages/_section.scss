@@ -1,5 +1,5 @@
 .section {
-  &__start {
+  &-start {
     display: flex;
     position: relative;
     // height: 60vh;
@@ -146,7 +146,7 @@
     }
   }
 
-  &__about {
+  &-about {
     &--container {
       position: relative;
       top: 100px;
@@ -167,7 +167,7 @@
     }
   }
 
-  &__technology {
+  &-technology {
     position: relative;
     top: 130px;
     min-height: 40vh;
