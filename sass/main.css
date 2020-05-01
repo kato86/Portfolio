@@ -595,10 +595,9 @@ footer {
   height: 100%;
   text-align: center;
   letter-spacing: 3px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
   color: #000;
   padding: 2rem;
+  padding-bottom: 0;
   margin-left: 2rem;
 }
 
@@ -619,7 +618,7 @@ footer {
 }
 
 .navbar__list--items:hover {
-  font-weight: 700;
+  border-bottom: 2px solid #000;
 }
 
 @media (max-width: 600px) {
