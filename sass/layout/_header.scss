@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 
 .header {
   width: 100%;
   height: 50px;
   position: relative;
   z-index: 2;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  background-color: $color-start;
 
   @include respond(phone) {
     display: none;
@@ -20,11 +20,11 @@
   position: fixed;
   top: 40%;
 
-  &__icon { 
-    font-size: 30px;
+  &__icon {
+    font-size: 2rem;
     width: 70px;
     text-align: center;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     border-left: none;
 
     &:not(:last-child) {
@@ -43,38 +43,39 @@
 
 .navbar {
   height: 100%;
+  float: right;
 
   &__list {
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
-  
 
     &--items {
       list-style: none;
       font-size: 1.5rem;
       cursor: pointer;
-      width: 33.33%;
       height: 100%;
       text-align: center;
       letter-spacing: 3px;
-      transition: all .2s;
+      transition: all 0.2s;
+      color: $color-nav;
+      padding: 2rem;
+      margin-left: 2rem;
 
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-          height: 100%;
-          text-decoration: none;
-          font-size: 2.2rem;
-          color: inherit;
-        }
+        height: 100%;
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: inherit;
+      }
 
-        &:hover {
-          font-weight: 700;
-        }
+      &:hover {
+        font-weight: 700;
+      }
     }
 
     @include respond(phone) {
@@ -84,176 +85,175 @@
 }
 
 .a-burger {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    top: 5px;
-    
-    &:after {
-      content: '';
-      position: absolute;
-      background: white;
-      height: 2px;
-      width: 0%;
-      transform: translateX(-50%);
-      left: 50%;
-      bottom: 0;
-      transition: .35s ease;
-    }
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  top: 5px;
 
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-      width: 100%;
-    }
-  }
-
-  .button_container {
-    display: none;
-    position: fixed;
-    top: 2%;
-    right: 2%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    z-index: 100;
-    transition: opacity .25s ease;
-    
-    &:hover {
-      opacity: .7;
-    }
-    
-    &.active {
-      .top {
-        transform: translateY(11px) translateX(0) rotate(45deg);
-        background: black;
-      }
-      .middle {
-        opacity: 0;
-        background: black;
-      }
-      
-      .bottom {
-        transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: black;
-      }
-    }
-    
-    span {
-      // background: $primary-color;
-      border: none;
-      height: 5px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition:  all .35s ease;
-      cursor: pointer;
-    
-      &:nth-of-type(2) {
-        top: 11px;
-      }
-      
-      &:nth-of-type(3) {
-        top: 22px;
-      }
-    }
-    // TODO: Tymczasowo wyłączony burger
-    // @include respond (phone) {
-    //   display: block;
-    // }
-  }
-
-.overlay {
-    position: fixed;
+  &:after {
+    content: "";
+    position: absolute;
     background: white;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: 0.35s ease;
+  }
+
+  &:hover:after,
+  &:focus:after,
+  &:active:after {
+    width: 100%;
+  }
+}
+
+.button_container {
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: black;
+    }
+    .middle {
+      opacity: 0;
+      background: black;
+    }
+
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: black;
+    }
+  }
+
+  span {
+    // background: $primary-color;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    
-    &.open {
-      opacity: .9;
-      visibility: visible;
-      height: 100%;
-      
-      li {
-        animation: fadeInRight .5s ease forwards;
-        animation-delay: .3s;
-        
-        &:nth-of-type(2) {
-          animation-delay: .5s;
-        }
-        &:nth-of-type(3) {
-          animation-delay: .7s;
-        }
-        &:nth-of-type(4) {
-          animation-delay: .9s;
-        }
-        &:nth-of-type(5) {
-          animation-delay: 1.1s;
-        }
+    transition: all 0.35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
+  // TODO: Tymczasowo wyłączony burger
+  // @include respond (phone) {
+  //   display: block;
+  // }
+}
+
+.overlay {
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+
+  &.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+
+    li {
+      animation: fadeInRight 0.5s ease forwards;
+      animation-delay: 0.3s;
+
+      &:nth-of-type(2) {
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 0.7s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 0.9s;
+      }
+      &:nth-of-type(5) {
+        animation-delay: 1.1s;
       }
     }
-    nav {
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
       position: relative;
-      height: 70%;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 50px;
-      font-weight: 400;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
-      position: relative;
-      height: 100%; 
-      
-      li {
+      opacity: 0;
+
+      a {
         display: block;
-        height: 25%;
-        height: calc(100% / 4);
-        min-height: 50px;
         position: relative;
-        opacity: 0;
-        
-        a {
-          display: block;
-          position: relative;
-          color: black;
-          text-decoration: none;
-          overflow: hidden;
-          
-          &:hover:after,
-          &:focus:after,
-          &:active:after {
-              width: 100%;
-          }
-          
-          &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0%;
-            transform: translateX(-50%);
-            height: 3px;
-            background: black;
-            transition: .35s;
-          }
+        color: black;
+        text-decoration: none;
+        overflow: hidden;
+
+        &:hover:after,
+        &:focus:after,
+        &:active:after {
+          width: 100%;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: black;
+          transition: 0.35s;
         }
       }
     }
   }
-
+}
