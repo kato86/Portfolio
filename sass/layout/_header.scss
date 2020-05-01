@@ -52,10 +52,6 @@
 
     &--items {
       list-style: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      height: 100%;
-      text-align: center;
       letter-spacing: 3px;
       color: $color-nav;
       padding: 2rem;
@@ -71,10 +67,6 @@
         text-decoration: none;
         font-size: 2.2rem;
         color: inherit;
-      }
-
-      &:hover {
-        border-bottom: 2px solid $color-nav;
       }
     }
 
