@@ -430,20 +430,11 @@ body {
   position: relative;
 }
 
-.photo {
-  position: absolute;
-  right: 10rem;
-  top: 5rem;
-}
-
 .photo__shape {
-  shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(32% at 50% 35%);
-          clip-path: circle(32% at 50% 35%);
-}
-
-.photo__img {
-  width: 40rem;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 470px;
 }
 
 footer {
