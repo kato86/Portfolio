@@ -3,10 +3,18 @@
     display: flex;
     align-items: center;
     position: relative;
-    height: 70vh;
-    background-color: black;
+    height: 60vh;
+    padding-top: 50px;
+    background: linear-gradient(to bottom, #7b9ba6 65%, #233656);
 
     &--text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      // test
       .name {
         display: block;
         font-size: 11rem;
@@ -129,6 +137,7 @@
       justify-content: space-around;
       width: 100%;
       margin: auto;
+      background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 
       .icon-box {
         position: relative;
