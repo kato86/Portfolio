@@ -431,7 +431,6 @@ body {
 }
 
 .photo__shape {
-  border-radius: 100%;
   overflow: hidden;
   height: 470px;
 }
