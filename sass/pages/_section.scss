@@ -5,7 +5,14 @@
     position: relative;
     height: 60vh;
     padding-top: 50px;
-    background: linear-gradient(to bottom, #7b9ba6 65%, #233656);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(256, 256, 256, 0.4),
+        rgba(128, 0, 128, 0.7)
+      ),
+      url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
 
     &--text {
       flex: 1;

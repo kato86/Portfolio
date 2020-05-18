@@ -259,8 +259,8 @@ body {
   font-family: 'Roboto', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #ccc;
-  background-color: #000;
+  color: #EEF4F2;
+  background-color: #233656;
   overflow-x: hidden;
 }
 
@@ -431,7 +431,6 @@ body {
 }
 
 .photo__shape {
-  border: 10px solid #fff;
   border-radius: 100%;
   overflow: hidden;
   height: 470px;
@@ -822,8 +821,31 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 70vh;
-  background-color: black;
+  height: 60vh;
+  padding-top: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(128, 0, 128, 0.7))), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(128, 0, 128, 0.7)), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-start--text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-start--text .name {
@@ -978,6 +1000,8 @@ footer {
       justify-content: space-around;
   width: 100%;
   margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#233656), color-stop(65%, #7b9ba6));
+  background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 }
 
 .section-technology--container .icon-box {

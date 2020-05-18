@@ -22,11 +22,7 @@
   top: 40%;
 
   &__icon {
-<<<<<<< HEAD
     font-size: 2rem;
-=======
-    font-size: 30px;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     width: 70px;
     text-align: center;
     transition: all 0.2s ease-out;
@@ -54,22 +50,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
 
     &--items {
       list-style: none;
       letter-spacing: 3px;
-<<<<<<< HEAD
       color: $color-nav;
       padding: 2rem;
       padding-bottom: 0;
       margin-left: 2rem;
-=======
-      transition: all .2s;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
 
       a {
         display: flex;
@@ -81,14 +69,6 @@
         font-size: 2.2rem;
         color: inherit;
       }
-<<<<<<< HEAD
-=======
-
-      &:hover {
-        font-weight: 700;
-        background-color: #7b9ba6;
-      }
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     }
 
     @include respond(phone) {
@@ -108,11 +88,7 @@
   top: 5px;
 
   &:after {
-<<<<<<< HEAD
     content: "";
-=======
-    content: '';
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     position: absolute;
     background: white;
     height: 2px;
@@ -120,11 +96,7 @@
     transform: translateX(-50%);
     left: 50%;
     bottom: 0;
-<<<<<<< HEAD
     transition: 0.35s ease;
-=======
-    transition: .35s ease;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
   }
 
   &:hover:after,
@@ -143,17 +115,10 @@
   width: 40px;
   cursor: pointer;
   z-index: 100;
-<<<<<<< HEAD
   transition: opacity 0.25s ease;
 
   &:hover {
     opacity: 0.7;
-=======
-  transition: opacity .25s ease;
-
-  &:hover {
-    opacity: .7;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
   }
 
   &.active {
@@ -161,10 +126,6 @@
       transform: translateY(11px) translateX(0) rotate(45deg);
       background: black;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     .middle {
       opacity: 0;
       background: black;
@@ -184,11 +145,7 @@
     position: absolute;
     top: 0;
     left: 0;
-<<<<<<< HEAD
     transition: all 0.35s ease;
-=======
-    transition: all .35s ease;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     cursor: pointer;
 
     &:nth-of-type(2) {
@@ -199,10 +156,6 @@
       top: 22px;
     }
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
   // TODO: Tymczasowo wyłączony burger
   // @include respond (phone) {
   //   display: block;
@@ -218,24 +171,15 @@
   height: 0%;
   opacity: 0;
   visibility: hidden;
-<<<<<<< HEAD
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
 
   &.open {
     opacity: 0.9;
-=======
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-
-  &.open {
-    opacity: .9;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     visibility: visible;
     height: 100%;
 
     li {
-<<<<<<< HEAD
       animation: fadeInRight 0.5s ease forwards;
       animation-delay: 0.3s;
 
@@ -270,47 +214,6 @@
     position: relative;
     height: 100%;
 
-=======
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .3s;
-
-      &:nth-of-type(2) {
-        animation-delay: .5s;
-      }
-
-      &:nth-of-type(3) {
-        animation-delay: .7s;
-      }
-
-      &:nth-of-type(4) {
-        animation-delay: .9s;
-      }
-
-      &:nth-of-type(5) {
-        animation-delay: 1.1s;
-      }
-    }
-  }
-
-  nav {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
     li {
       display: block;
       height: 25%;
@@ -333,11 +236,7 @@
         }
 
         &:after {
-<<<<<<< HEAD
           content: "";
-=======
-          content: '';
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
           position: absolute;
           bottom: 0;
           left: 50%;
@@ -345,17 +244,9 @@
           transform: translateX(-50%);
           height: 3px;
           background: black;
-<<<<<<< HEAD
           transition: 0.35s;
-=======
-          transition: .35s;
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
         }
       }
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> fbd1f009e5a0a2e4070b95bb5af7f803c686baed
