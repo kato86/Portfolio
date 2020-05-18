@@ -26,22 +26,18 @@
         font-size: 11rem;
         letter-spacing: 2rem;
         text-transform: uppercase;
-        padding-left: 2rem;
         color: #fff;
         font-family: "Montserrat", sans-serif;
 
         @include respond(tab-land) {
-          width: 350px;
           letter-spacing: 25px;
         }
 
         @include respond(tab-port) {
-          width: 283px;
           letter-spacing: 20px;
         }
 
         @include respond(small-screen) {
-          width: 250px;
           letter-spacing: 16px;
         }
       }
@@ -51,22 +47,18 @@
         font-size: 11rem;
         letter-spacing: 20px;
         text-transform: uppercase;
-        padding-left: 4rem;
         color: #fff;
         font-family: "Montserrat", sans-serif;
 
         @include respond(tab-land) {
-          width: 420px;
           letter-spacing: 25px;
         }
 
         @include respond(tab-port) {
-          width: 365px;
           letter-spacing: 20px;
         }
 
         @include respond(small-screen) {
-          width: 300px;
           letter-spacing: 16px;
         }
       }
