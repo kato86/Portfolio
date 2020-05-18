@@ -519,8 +519,8 @@ footer {
   z-index: 2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background-color: transparent;
-  text-shadow: 2px 2px white;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -582,7 +582,7 @@ footer {
 .navbar__list--items {
   list-style: none;
   letter-spacing: 3px;
-  color: #000;
+  color: #fff;
   padding: 2rem;
   padding-bottom: 0;
   margin-left: 2rem;

@@ -4,8 +4,8 @@
   position: fixed;
   z-index: 2;
   transition: all 0.5s;
-  background-color: transparent;
-  text-shadow: 2px 2px white;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
 
   @include respond(phone) {
     display: none;
@@ -52,7 +52,7 @@
     &--items {
       list-style: none;
       letter-spacing: 3px;
-      color: $color-nav;
+      color: #fff;
       padding: 2rem;
       padding-bottom: 0;
       margin-left: 2rem;
