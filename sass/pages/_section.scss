@@ -4,11 +4,10 @@
     align-items: center;
     position: relative;
     height: 60vh;
-    padding-top: 50px;
     background-image: linear-gradient(
         to right bottom,
         rgba(256, 256, 256, 0.4),
-        rgba(128, 0, 128, 0.7)
+        rgba(128, 0, 128, 0.5)
       ),
       url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
     background-size: cover;
@@ -28,8 +27,8 @@
         letter-spacing: 2rem;
         text-transform: uppercase;
         padding-left: 2rem;
-        color: #999;
-        text-shadow: -10px 0px 2px #fff;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
 
         @include respond(tab-land) {
           width: 350px;
@@ -53,8 +52,8 @@
         letter-spacing: 20px;
         text-transform: uppercase;
         padding-left: 4rem;
-        color: #999;
-        text-shadow: -10px 0px 2px #fff;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
 
         @include respond(tab-land) {
           width: 420px;
@@ -80,7 +79,7 @@
         width: 100%;
         text-align: center;
         letter-spacing: 23px;
-        font-family: "Playfair Display", "Roboto", serif;
+        font-family: "Montserrat", sans-serif;
         opacity: 0.8;
         padding-left: 20px;
 

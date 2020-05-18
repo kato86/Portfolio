@@ -6,7 +6,7 @@
 1800++ Big desktop
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @-webkit-keyframes arrow-down-show {
   0% {
     opacity: 0;
@@ -265,14 +265,14 @@ body {
 }
 
 .heading-secondary {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   padding: 10px;
   display: inline-block;
 }
 
 .heading-small {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 30px;
   padding: 30px;
@@ -281,7 +281,7 @@ body {
 
 .heading-small span {
   padding: 10px;
-  color: #EEF4F2;
+  color: #eef4f2;
 }
 
 @media (max-width: 450px) {
@@ -822,9 +822,8 @@ footer {
           align-items: center;
   position: relative;
   height: 60vh;
-  padding-top: 50px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(128, 0, 128, 0.7))), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(128, 0, 128, 0.7)), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(128, 0, 128, 0.5))), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(128, 0, 128, 0.5)), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -854,8 +853,8 @@ footer {
   letter-spacing: 2rem;
   text-transform: uppercase;
   padding-left: 2rem;
-  color: #999;
-  text-shadow: -10px 0px 2px #fff;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -885,8 +884,8 @@ footer {
   letter-spacing: 20px;
   text-transform: uppercase;
   padding-left: 4rem;
-  color: #999;
-  text-shadow: -10px 0px 2px #fff;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -918,7 +917,7 @@ footer {
   width: 100%;
   text-align: center;
   letter-spacing: 23px;
-  font-family: "Playfair Display", "Roboto", serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0.8;
   padding-left: 20px;
 }
