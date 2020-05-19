@@ -14,13 +14,9 @@
     background-position: center;
 
     &--text {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      display: inline-block;
+      width: 100%;
 
-      // test
       .name {
         display: block;
         font-size: 11rem;
@@ -28,6 +24,8 @@
         text-transform: uppercase;
         color: #fff;
         font-family: "Montserrat", sans-serif;
+        border-bottom: 8px solid yellow;
+        width: 75%;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -49,6 +47,10 @@
         text-transform: uppercase;
         color: #fff;
         font-family: "Montserrat", sans-serif;
+        border-bottom: 8px solid yellow;
+        width: 75%;
+        float: right;
+        text-align: right;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -74,6 +76,7 @@
         font-family: "Montserrat", sans-serif;
         opacity: 0.8;
         padding-left: 20px;
+        margin-top: 20px;
 
         @include respond(tab-land) {
           letter-spacing: 22px;
