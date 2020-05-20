@@ -513,7 +513,6 @@ footer {
 
 .header {
   width: 100%;
-  height: 50px;
   position: fixed;
   z-index: 2;
   -webkit-transition: all 0.5s;
@@ -561,7 +560,6 @@ footer {
 }
 
 .navbar {
-  height: 100%;
   float: right;
 }
 
@@ -575,15 +573,17 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .navbar__list--items {
   list-style: none;
   letter-spacing: 3px;
   color: #fff;
-  padding: 2rem;
   padding-bottom: 0;
   margin-left: 2rem;
+  width: 100px;
 }
 
 .navbar__list--items a {
@@ -602,7 +602,7 @@ footer {
   color: inherit;
 }
 
-.navbar__list--items a:hover {
+.navbar__list--items:hover {
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 5px;
