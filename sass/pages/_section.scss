@@ -23,7 +23,7 @@
         border-bottom: 8px solid yellow;
         width: 75%;
         -webkit-animation: text-border 3s ease-out;
-        animation: text-border 3s ease-out;
+        animation: text-border text-display 3s ease-out;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -49,6 +49,8 @@
         width: 75%;
         float: right;
         text-align: right;
+        -webkit-animation: text-border 3s ease-out;
+        animation: text-border 3s ease-out;
 
         @include respond(tab-land) {
           letter-spacing: 25px;

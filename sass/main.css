@@ -24,6 +24,24 @@
   }
 }
 
+@-webkit-keyframes text-display {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+
+@keyframes text-display {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+
 @-webkit-keyframes arrow-down-show {
   0% {
     opacity: 0;
@@ -865,7 +883,7 @@ footer {
   border-bottom: 8px solid yellow;
   width: 75%;
   -webkit-animation: text-border 3s ease-out;
-  animation: text-border 3s ease-out;
+  animation: text-border text-display 3s ease-out;
 }
 
 @media (max-width: 1200px) {
@@ -897,6 +915,8 @@ footer {
   width: 75%;
   float: right;
   text-align: right;
+  -webkit-animation: text-border 3s ease-out;
+  animation: text-border 3s ease-out;
 }
 
 @media (max-width: 1200px) {
