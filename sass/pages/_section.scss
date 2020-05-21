@@ -22,6 +22,8 @@
         font-family: "Montserrat", sans-serif;
         border-bottom: 8px solid yellow;
         width: 75%;
+        -webkit-animation: text-border 3s ease-out;
+        animation: text-border 3s ease-out;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
