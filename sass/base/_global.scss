@@ -25,3 +25,18 @@
     padding: 0;
   }
 }
+
+.anim {
+  &-border {
+    &--right {
+      display: inline-block;
+      border-bottom: 2px solid red;
+      width: 75%;
+    }
+    &--left {
+      display: inline-block;
+      border-bottom: 2px solid red;
+      width: 75%;
+    }
+  }
+}

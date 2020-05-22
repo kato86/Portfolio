@@ -117,6 +117,18 @@ body {
   }
 }
 
+.anim-border--right {
+  display: inline-block;
+  border-bottom: 2px solid red;
+  width: 75%;
+}
+
+.anim-border--left {
+  display: inline-block;
+  border-bottom: 2px solid red;
+  width: 75%;
+}
+
 .u-center-text {
   text-align: center;
 }
