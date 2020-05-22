@@ -166,7 +166,7 @@ body {
   position: absolute;
   bottom: 10vh;
   -webkit-animation: arrow-down-show 4s ease-out;
-  animation: arrow-down-show 4s ease-out;
+          animation: arrow-down-show 4s ease-out;
 }
 
 .btn-contact {
@@ -181,14 +181,14 @@ body {
   display: flex;
   color: white;
   font-size: 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 100%;
   padding: 10px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .arrow-animated:hover {
