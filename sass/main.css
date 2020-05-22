@@ -24,24 +24,6 @@
   }
 }
 
-@-webkit-keyframes text-display {
-  0% {
-    display: none;
-  }
-  100% {
-    display: block;
-  }
-}
-
-@keyframes text-display {
-  0% {
-    display: none;
-  }
-  100% {
-    display: block;
-  }
-}
-
 *,
 *::after,
 *::before {
@@ -118,14 +100,15 @@ body {
 }
 
 .anim-border--right {
-  display: inline-block;
+  display: block;
   border-bottom: 2px solid red;
   width: 75%;
+  -webkit-animation: text-border 3s ease-out;
+  animation: text-border 3s ease-out;
 }
 
 .anim-border--left {
-  display: inline-block;
-  border-bottom: 2px solid red;
+  display: block;
   width: 75%;
 }
 
@@ -668,24 +651,24 @@ footer {
   background-image: linear-gradient(to right bottom, lightgray, black), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .section-start--text {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
 .section-start--text .name {
   display: block;
+  position: absolute;
+  top: 0;
   font-size: 11rem;
   letter-spacing: 2rem;
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 8px solid yellow;
   width: 75%;
-  -webkit-animation: text-border 3s ease-out;
-  animation: text-border text-display 3s ease-out;
 }
 
 @media (max-width: 1200px) {
@@ -708,6 +691,8 @@ footer {
 
 .section-start--text .surname {
   display: block;
+  position: absolute;
+  right: 0;
   font-size: 11rem;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -717,8 +702,6 @@ footer {
   width: 75%;
   float: right;
   text-align: right;
-  -webkit-animation: text-border 3s ease-out;
-  animation: text-border 3s ease-out;
 }
 
 @media (max-width: 1200px) {
@@ -740,9 +723,9 @@ footer {
 }
 
 .section-start--text .web-dev-text {
-  display: inline-block;
+  display: block;
   position: relative;
-  top: 0px;
+  bottom: -200px;
   font-size: 20px;
   width: 100%;
   text-align: center;

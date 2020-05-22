@@ -29,13 +29,14 @@
 .anim {
   &-border {
     &--right {
-      display: inline-block;
+      display: block;
       border-bottom: 2px solid red;
       width: 75%;
+      -webkit-animation: text-border 3s ease-out;
+      animation: text-border 3s ease-out;
     }
     &--left {
-      display: inline-block;
-      border-bottom: 2px solid red;
+      display: block;
       width: 75%;
     }
   }
