@@ -12,7 +12,7 @@
     width: 0;
   }
   100% {
-    width: 75%;
+    width: 65%;
   }
 }
 @keyframes text-border {
@@ -20,7 +20,7 @@
     width: 0;
   }
   100% {
-    width: 75%;
+    width: 65%;
   }
 }
 
@@ -102,7 +102,7 @@ body {
 .anim-border--right {
   display: block;
   border-bottom: 2px solid red;
-  width: 75%;
+  width: 65%;
   -webkit-animation: text-border 3s ease-out;
   animation: text-border 3s ease-out;
 }
@@ -668,7 +668,7 @@ footer {
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  width: 75%;
+  width: 65%;
 }
 
 @media (max-width: 1200px) {
@@ -699,7 +699,7 @@ footer {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   border-bottom: 8px solid yellow;
-  width: 75%;
+  width: 65%;
   float: right;
   text-align: right;
 }

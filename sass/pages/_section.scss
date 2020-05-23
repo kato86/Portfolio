@@ -23,7 +23,7 @@
         text-transform: uppercase;
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        width: 75%;
+        width: 65%;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -48,7 +48,7 @@
         color: #fff;
         font-family: "Montserrat", sans-serif;
         border-bottom: 8px solid yellow;
-        width: 75%;
+        width: 65%;
         float: right;
         text-align: right;
 
