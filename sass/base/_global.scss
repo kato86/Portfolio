@@ -30,14 +30,22 @@
   &-border {
     &--right {
       display: block;
-      border-bottom: 2px solid red;
+      position: absolute;
+      border-bottom: 4px solid #ccc;
       width: 65%;
-      -webkit-animation: text-border 3s ease-out;
-      animation: text-border 3s ease-out;
+      top: 260px;
+      -webkit-animation: text-border-rigth 3s ease-out;
+      animation: text-border-rigth 3s ease-out;
     }
     &--left {
       display: block;
-      width: 75%;
+      position: absolute;
+      right: 0;
+      top: 380px;
+      border-bottom: 4px solid #ccc;
+      width: 65%;
+      -webkit-animation: text-border-left 3s ease-out;
+      animation: text-border-left 3s ease-out;
     }
   }
 }

@@ -8,16 +8,17 @@
       url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
 
     &--text {
       display: block;
       width: 100%;
+      height: inherit;
+      position: relative;
 
       .name {
         display: block;
         position: absolute;
-        top: 0;
+        top: 140px;
         font-size: 11rem;
         letter-spacing: 2rem;
         text-transform: uppercase;
@@ -47,10 +48,10 @@
         text-transform: uppercase;
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        border-bottom: 8px solid yellow;
         width: 65%;
         float: right;
         text-align: right;
+        top: 260px;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -67,8 +68,8 @@
 
       .web-dev-text {
         display: block;
-        position: relative;
-        bottom: -200px;
+        position: absolute;
+        bottom: 50px;
         font-size: 20px;
         width: 100%;
         text-align: center;

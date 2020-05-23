@@ -7,7 +7,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@-webkit-keyframes text-border {
+@-webkit-keyframes text-border-rigth {
   0% {
     width: 0;
   }
@@ -15,9 +15,27 @@
     width: 65%;
   }
 }
-@keyframes text-border {
+@keyframes text-border-rigth {
   0% {
     width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes text-border-left {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes text-border-left {
+  0% {
+    width: 0%;
   }
   100% {
     width: 65%;
@@ -101,15 +119,23 @@ body {
 
 .anim-border--right {
   display: block;
-  border-bottom: 2px solid red;
+  position: absolute;
+  border-bottom: 4px solid #ccc;
   width: 65%;
-  -webkit-animation: text-border 3s ease-out;
-  animation: text-border 3s ease-out;
+  top: 260px;
+  -webkit-animation: text-border-rigth 3s ease-out;
+  animation: text-border-rigth 3s ease-out;
 }
 
 .anim-border--left {
   display: block;
-  width: 75%;
+  position: absolute;
+  right: 0;
+  top: 380px;
+  border-bottom: 4px solid #ccc;
+  width: 65%;
+  -webkit-animation: text-border-left 3s ease-out;
+  animation: text-border-left 3s ease-out;
 }
 
 .u-center-text {
@@ -651,18 +677,19 @@ footer {
   background-image: linear-gradient(to right bottom, lightgray, black), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .section-start--text {
   display: block;
   width: 100%;
+  height: inherit;
+  position: relative;
 }
 
 .section-start--text .name {
   display: block;
   position: absolute;
-  top: 0;
+  top: 140px;
   font-size: 11rem;
   letter-spacing: 2rem;
   text-transform: uppercase;
@@ -698,10 +725,10 @@ footer {
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 8px solid yellow;
   width: 65%;
   float: right;
   text-align: right;
+  top: 260px;
 }
 
 @media (max-width: 1200px) {
@@ -724,8 +751,8 @@ footer {
 
 .section-start--text .web-dev-text {
   display: block;
-  position: relative;
-  bottom: -200px;
+  position: absolute;
+  bottom: 50px;
   font-size: 20px;
   width: 100%;
   text-align: center;

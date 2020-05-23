@@ -1,4 +1,4 @@
-@keyframes text-border {
+@keyframes text-border-rigth {
   0% {
     width: 0;
   }
@@ -7,4 +7,11 @@
   }
 }
 
-//test
+@keyframes text-border-left {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
