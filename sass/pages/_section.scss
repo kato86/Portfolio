@@ -25,6 +25,7 @@
         color: #fff;
         font-family: "Montserrat", sans-serif;
         width: 65%;
+        visibility: hidden;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -52,6 +53,8 @@
         float: right;
         text-align: right;
         top: 260px;
+
+        animation: show-text 1s ease-out 3s;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
