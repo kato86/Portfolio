@@ -44,19 +44,31 @@
 
 @-webkit-keyframes show-text {
   0% {
-    z-index: -1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    z-index: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes show-text {
   0% {
-    z-index: -1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    z-index: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -751,8 +763,10 @@ footer {
   text-align: center;
   top: 230px;
   margin-right: 20px;
-  -webkit-animation: show-text 1s ease-out 3s;
-          animation: show-text 1s ease-out 3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: show-text 2s ease-in-out 3s;
+          animation: show-text 2s ease-in-out 3s;
 }
 
 @media (max-width: 1200px) {

@@ -55,8 +55,9 @@
         text-align: center;
         top: 230px;
         margin-right: 20px;
+        transform: scale(0);
 
-        animation: show-text 1s ease-out 3s;
+        animation: show-text 2s ease-in-out 3s;
 
         @include respond(tab-land) {
           letter-spacing: 25px;

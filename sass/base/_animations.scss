@@ -18,9 +18,12 @@
 
 @keyframes show-text {
   0% {
-    z-index: -1;
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
   }
   100% {
-    z-index: 1;
+    transform: scale(1);
   }
 }
