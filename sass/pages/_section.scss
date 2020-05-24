@@ -18,14 +18,15 @@
       .name {
         display: block;
         position: absolute;
-        top: 140px;
+        top: 110px;
         font-size: 11rem;
         letter-spacing: 2rem;
         text-transform: uppercase;
         color: #fff;
         font-family: "Montserrat", sans-serif;
         width: 65%;
-        visibility: hidden;
+        margin-left: 20px;
+        text-align: center;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
@@ -51,8 +52,9 @@
         font-family: "Montserrat", sans-serif;
         width: 65%;
         float: right;
-        text-align: right;
-        top: 260px;
+        text-align: center;
+        top: 230px;
+        margin-right: 20px;
 
         animation: show-text 1s ease-out 3s;
 
