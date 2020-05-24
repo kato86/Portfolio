@@ -448,7 +448,8 @@ footer {
   color: #fff;
   padding-bottom: 0;
   margin-left: 2rem;
-  width: 100px;
+  width: 150px;
+  margin-top: 10px;
 }
 
 .navbar__list--items a {
