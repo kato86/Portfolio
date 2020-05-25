@@ -462,6 +462,8 @@ footer {
   margin-left: 2rem;
   width: 150px;
   margin-top: 10px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .navbar__list--items a {
@@ -763,10 +765,6 @@ footer {
   text-align: center;
   top: 230px;
   margin-right: 20px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: show-text 2s ease-in-out 3s;
-          animation: show-text 2s ease-in-out 3s;
 }
 
 @media (max-width: 1200px) {
