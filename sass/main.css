@@ -706,8 +706,8 @@ footer {
           align-items: center;
   position: relative;
   height: 60vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(lightgray), to(black)), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
-  background-image: linear-gradient(to right bottom, lightgray, black), url("../../img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(lightgray), to(black));
+  background-image: linear-gradient(to right bottom, lightgray, black);
   background-size: cover;
   background-position: center;
 }
