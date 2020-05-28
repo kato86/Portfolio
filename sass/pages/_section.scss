@@ -4,9 +4,7 @@
     align-items: center;
     position: relative;
     height: 60vh;
-    background-image: linear-gradient(to right bottom, lightgray, black);
-    background-size: cover;
-    background-position: center;
+    // background-image: linear-gradient(to right bottom, lightgray, black);
 
     &--text {
       display: block;
@@ -141,7 +139,6 @@
       justify-content: space-around;
       width: 100%;
       margin: auto;
-      background: linear-gradient(to bottom, #233656, #7b9ba6 65%);
 
       .icon-box {
         position: relative;
