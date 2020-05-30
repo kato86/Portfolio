@@ -30,10 +30,10 @@
   &-border {
     &--right {
       display: block;
-      position: relative;
+      position: absolute;
       border-top: 4px solid #ccc;
       width: 65%;
-      top: 100px;
+      top: 215px;
       -webkit-animation: text-border-rigth 3s ease-out;
       animation: text-border-rigth 3s ease-out;
     }
