@@ -1,6 +1,13 @@
 .photo {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+
   &__shape {
-    overflow: hidden;
-    height: 470px;
+    max-height: 70px;
+
+    & > img {
+      max-width: 70px;
+    }
   }
 }

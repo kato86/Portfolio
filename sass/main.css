@@ -307,9 +307,18 @@ body {
   position: relative;
 }
 
-.photo__shape {
+.photo {
+  display: inline-block;
+  border-radius: 100%;
   overflow: hidden;
-  height: 470px;
+}
+
+.photo__shape {
+  max-height: 70px;
+}
+
+.photo__shape > img {
+  max-width: 70px;
 }
 
 footer {
@@ -389,6 +398,15 @@ footer {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   width: 100%;
   position: fixed;
   z-index: 2;
