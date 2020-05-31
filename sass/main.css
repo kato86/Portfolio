@@ -321,6 +321,15 @@ body {
   max-width: 70px;
 }
 
+.photo__about {
+  position: absolute;
+  z-index: -1;
+}
+
+.photo__about > img {
+  width: 45%;
+}
+
 footer {
   height: 200px;
 }

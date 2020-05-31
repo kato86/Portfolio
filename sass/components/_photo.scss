@@ -11,3 +11,12 @@
     }
   }
 }
+
+.photo__about {
+  position: absolute;
+  z-index: -1;
+
+  & > img {
+    width: 45%;
+  }
+}
