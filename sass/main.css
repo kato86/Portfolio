@@ -10,35 +10,51 @@
 @-webkit-keyframes text-border-rigth {
   0% {
     width: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   100% {
     width: 65%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
   }
 }
 @keyframes text-border-rigth {
   0% {
     width: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   100% {
     width: 65%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
   }
 }
 
 @-webkit-keyframes text-border-left {
   0% {
     width: 0%;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   100% {
     width: 65%;
+    -webkit-filter: blur();
+            filter: blur();
   }
 }
 
 @keyframes text-border-left {
   0% {
     width: 0%;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   100% {
     width: 65%;
+    -webkit-filter: blur();
+            filter: blur();
   }
 }
 
