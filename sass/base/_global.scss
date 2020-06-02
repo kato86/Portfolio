@@ -34,8 +34,8 @@
       border-top: 4px solid #ccc;
       width: 65%;
       top: 215px;
-      -webkit-animation: text-border-rigth 3s ease-out;
-      animation: text-border-rigth 3s ease-out;
+      -webkit-animation: text-border-rigth 2.7s ease-out;
+      animation: text-border-rigth 2.7s ease-out;
     }
     &--left {
       display: block;
@@ -44,8 +44,8 @@
       top: 380px;
       border-bottom: 4px solid #ccc;
       width: 65%;
-      -webkit-animation: text-border-left 3s ease-out;
-      animation: text-border-left 3s ease-out;
+      -webkit-animation: text-border-left 2.7s ease-out;
+      animation: text-border-left 2.7s ease-out;
     }
   }
 }

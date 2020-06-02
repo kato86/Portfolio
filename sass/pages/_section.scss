@@ -110,11 +110,13 @@
   }
 
   &-about {
-    height: 70vh;
+    margin-top: 100px;
 
     &--container {
-      position: relative;
-      top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
 
       @include respond(tab-port) {
         top: 0;
