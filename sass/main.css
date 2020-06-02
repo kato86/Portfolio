@@ -343,7 +343,7 @@ body {
 }
 
 .photo__about > img {
-  width: 45%;
+  width: 37%;
 }
 
 footer {
@@ -880,6 +880,10 @@ footer {
   .section-start {
     padding-top: 0px;
   }
+}
+
+.section-about {
+  height: 70vh;
 }
 
 .section-about--container {
