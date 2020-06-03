@@ -883,7 +883,8 @@ footer {
 }
 
 .section-about {
-  margin-top: 100px;
+  position: relative;
+  top: 50px;
 }
 
 .section-about--container {
@@ -896,7 +897,7 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  height: 100%;
+  height: 70vh;
 }
 
 @media (max-width: 900px) {
