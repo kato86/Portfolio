@@ -366,10 +366,12 @@ body {
 .photo__about {
   position: absolute;
   z-index: -1;
-}
-
-.photo__about > img {
-  width: 37%;
+  width: 400px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(38, 70, 83, 0.8))), url("../../img/me_to_about.jpg");
+  background-image: linear-gradient(to right bottom, rgba(38, 70, 83, 0.8)), url("../../img/me_to_about.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 footer {
@@ -911,7 +913,16 @@ footer {
 
 .section-about {
   position: relative;
-  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
 }
 
 .section-about--container {

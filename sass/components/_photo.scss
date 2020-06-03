@@ -15,8 +15,11 @@
 .photo__about {
   position: absolute;
   z-index: -1;
+  width: 400px;
+  height: 400px;
 
-  & > img {
-    width: 37%;
-  }
+  background-image: linear-gradient(to right bottom, rgba(#264653, 0.8)),
+    url("../../img/me_to_about.jpg");
+  background-size: cover;
+  background-position: top;
 }
