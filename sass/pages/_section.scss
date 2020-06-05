@@ -71,15 +71,13 @@
       .web-dev-text {
         display: block;
         position: absolute;
-        bottom: 50px;
+        bottom: 100px;
         font-size: 20px;
         width: 100%;
         text-align: center;
         letter-spacing: 23px;
         font-family: "Montserrat", sans-serif;
-        padding-left: 20px;
-        margin-top: 20px;
-        animation: show-text--bottom 3s ease-in-out;
+        animation: show-text--bottom 2s ease-in-out;
 
         @include respond(tab-land) {
           letter-spacing: 22px;
