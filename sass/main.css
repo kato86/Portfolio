@@ -210,6 +210,14 @@ body {
   animation: text-border-left 2.7s ease-out;
 }
 
+.icons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
 .u-center-text {
   text-align: center;
 }
