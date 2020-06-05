@@ -459,7 +459,7 @@ footer {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   width: 100%;
   z-index: 2;
   -webkit-transition: all 0.5s;
