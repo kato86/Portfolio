@@ -240,6 +240,42 @@ body {
   margin: 0 5px;
 }
 
+.icon--twitter {
+  text-indent: -9999px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background-image: url("../../icon/twitter-white.svg");
+  margin: 0 5px;
+}
+
+.icon--instagram {
+  text-indent: -9999px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background-image: url("../../icon/instagram-white.svg");
+  margin: 0 5px;
+}
+
+.icon--fb {
+  text-indent: -9999px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background-image: url("../../icon/fb-white.svg");
+  margin: 0 5px;
+}
+
+.icon--mail {
+  text-indent: -9999px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background-image: url("../../icon/mail-white.svg");
+  margin: 0 5px;
+}
+
 .u-center-text {
   text-align: center;
 }
