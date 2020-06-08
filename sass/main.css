@@ -222,15 +222,22 @@ body {
   bottom: 0;
 }
 
-.icons {
-  display: block;
-  position: absolute;
-  bottom: 0;
+.icon--github {
   text-indent: -9999px;
   width: 36px;
   height: 36px;
-  background-image: url("../../icon/github-white.svg");
   background-size: 36px 36px;
+  background-image: url("../../icon/github-white.svg");
+  margin: 0 5px;
+}
+
+.icon--linkedin {
+  text-indent: -9999px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background-image: url("../../icon/linkedin-white.svg");
+  margin: 0 5px;
 }
 
 .u-center-text {
