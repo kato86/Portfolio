@@ -1,3 +1,11 @@
+.icons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .icons {
     display: block;
     position: absolute;
@@ -7,13 +15,4 @@
     height: 36px;
     background-image: url('../../icon/github-white.svg');
     background-size: 36px 36px;
-    fill: red;
-
-    &:hover {
-        fill: #fff;
-    }
-
-    svg {
-        fill: red;
-    }
 }

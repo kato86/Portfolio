@@ -210,6 +210,18 @@ body {
   animation: text-border-left 2.7s ease-out;
 }
 
+.icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .icons {
   display: block;
   position: absolute;
@@ -219,15 +231,6 @@ body {
   height: 36px;
   background-image: url("../../icon/github-white.svg");
   background-size: 36px 36px;
-  fill: red;
-}
-
-.icons:hover {
-  fill: #fff;
-}
-
-.icons svg {
-  fill: red;
 }
 
 .u-center-text {
