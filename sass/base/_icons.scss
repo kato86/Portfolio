@@ -1,13 +1,19 @@
 .icons {
+    display: block;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
+    text-indent: -9999px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../../icon/github-white.svg');
+    background-size: 36px 36px;
+    fill: red;
 
-    &>a {
-        display: flex;
-        justify-content: center;
-        color: #fff;
+    &:hover {
+        fill: #fff;
+    }
+
+    svg {
+        fill: red;
     }
 }
