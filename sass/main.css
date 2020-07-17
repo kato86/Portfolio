@@ -198,9 +198,11 @@ body {
 .anim-border--right {
   display: block;
   position: absolute;
-  border-top: 4px solid #ccc;
+  border-top: 4px solid #fff;
   width: 65%;
   top: 215px;
+  border-radius: 5px;
+  right: -2px;
   -webkit-animation: text-border-rigth 2.7s ease-out;
   animation: text-border-rigth 2.7s ease-out;
 }
@@ -210,8 +212,10 @@ body {
   position: absolute;
   right: 0;
   top: 380px;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #fff;
   width: 65%;
+  border-radius: 5px;
+  left: -2px;
   -webkit-animation: text-border-left 2.7s ease-out;
   animation: text-border-left 2.7s ease-out;
 }
