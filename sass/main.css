@@ -229,6 +229,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/github-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--github:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .icon--linkedin {
@@ -238,6 +245,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/linkedin-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--linkedin:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .icon--twitter {
@@ -247,6 +261,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/twitter-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--twitter:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .icon--instagram {
@@ -256,6 +277,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/instagram-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--instagram:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .icon--fb {
@@ -265,6 +293,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/fb-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--fb:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .icon--mail {
@@ -274,6 +309,13 @@ body {
   background-size: 36px 36px;
   background-image: url("../../icon/mail-white.svg");
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.icon--mail:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .u-center-text {
