@@ -10,317 +10,320 @@
         <link rel="stylesheet" href="sass/main.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        
+
         <title>Kamil Tomala</title>
     </head>
 
     <body>
-
-        <header class="header">
-            <div class="photo">
-                <figure class="photo__shape">
-                    <img src="./img/me.jpg" alt="My photo" class="photo__img">
-                </figure>
-            </div>
-
-
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__list--items">
-                            <a href="#start" class="scroller" data-offset="0">Start</a>
-                        </li>
-                        <li class="navbar__list--items">
-                            <a href="#about" class="scroller" data-offset="0">O mnie</a>
-                        </li>
-                        <!-- TODO: To be added leater -->
-                        <!-- <li class="navbar__items">
-                            <a href="#certyfikaty" class="scroller" data-offset="0">Certyfikaty</a>
-                        </li>
-                        <li class="navbar__items">
-                            <a href="#cv" class="scroller" data-offset="0">CV</a>
-                        </li> -->
-                        <li class="navbar__list--items">
-                            <a href="#contact" class="scroller" data-offset="0">Kontakt</a>
-                        </li>
-                    </ul>                    
-                </nav>
-                
-                <div id="toggle" class="button_container">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
+        <div class="container">
+            <header class="header">
+                <div class="photo">
+                    <figure class="photo__shape">
+                        <img src="./img/me.jpg" alt="My photo" class="photo__img">
+                    </figure>
                 </div>
-
-                <div id="overlay" class="overlay">
-                    <nav class="overlay-menu">
-                        <ul>
-                            <li><a href="#start" class="a-burger" data-offset="0">Start</a></li>
-                            <li><a href="#about" class="a-burger" data-offset="0">O mnie</a></li></li>
-                            <li><a href="#certyfikaty" class="a-burger" data-offset="0">Certyfikaty</a></li>
-                            <li><a href="#cv" class="a-burger" data-offset="0">CV</a></li>
-                            <li><a href="#contact" class="a-burger" data-offset="0">Kontakt</a></li>
-                        </ul>
+    
+    
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__list--items">
+                                <a href="#start" class="scroller" data-offset="0">Start</a>
+                            </li>
+                            <li class="navbar__list--items">
+                                <a href="#about" class="scroller" data-offset="0">O mnie</a>
+                            </li>
+                            <!-- TODO: To be added leater -->
+                            <!-- <li class="navbar__items">
+                                <a href="#certyfikaty" class="scroller" data-offset="0">Certyfikaty</a>
+                            </li>
+                            <li class="navbar__items">
+                                <a href="#cv" class="scroller" data-offset="0">CV</a>
+                            </li> -->
+                            <li class="navbar__list--items">
+                                <a href="#contact" class="scroller" data-offset="0">Kontakt</a>
+                            </li>
+                        </ul>                    
                     </nav>
-                </div>
-                
-        </header>
-
-        <main class="main">
-            
-            <section id="start" class="section-start">
-                <div class="section-start--text">
-                    <span class="name">Kamil</span>
-                    <span class="anim-border--right"></span>                    
-                    <span class="surname">Tomala</span>
-                    <span class="anim-border--left"></span>
-                    <span class="web-dev-text">Web Developer</span>  
-                </span>  
-                <div class="icons-container">
-                    <a href="https://github.com/kato86" class='icon--github' target="_blank">
-                        GitHub
-                    </a>                
-                    <a href="/" class='icon--linkedin' target="_blank">
-                        LinkedIn
-                    </a>                
-                    <a href="/" class='icon--twitter' target="_blank">
-                        Twitter
-                    </a>                
-                    <a href="/" class='icon--instagram' target="_blank">
-                        Instagram
-                    </a>                
-                    <a href="/" class='icon--fb' target="_blank">
-                        fb
-                    </a>                
-                    <a href="/" class='icon--mail' target="_blank">
-                        mail
-                    </a>                
-                </div>              
-            </section>
-
-            <section id="about" class="section-about">                    
-                <figure class="photo__about"></figure>                    
-                <div class="section-about--container"> 
-                    <div class="section-about--text">
-                        <p>Lorem ipsum dolor sit amet libero auctor varius, scelerisque pede id mauris et rhoncus interdum, lacus. Maecenas ante. Donec sit amet, consectetuer tincidunt nec, scelerisque ligula, egestas ipsum dolor nonummy consequat. Morbi quis ante. Maecenas blandit velit wisi, id leo ac quam fermentum risus. Aliquam vitae justo. Donec vitae mauris. Fusce aliquet at, justo. Fusce tellus. Curabitur fringilla aliquet. In ornare vel, velit. Nunc id eleifend vitae, rutrum laoreet. Nam quis lectus blandit risus neque vel massa. Nulla ante. Phasellus pulvinar interdum. Proin quis lacus tellus augue, sagittis nec, iaculis malesuada congue. Nam nec tincidunt vehicula, feugiat ac, vehicula lectus. Curabitur feugiat dui, porta tincidunt.</p>
-                    </div>                    
-                </div>
-            </section>
-
-            <section class="section-technology">
-                <div class="heading-small">
-                    <span>Poznane technologie</span>
-                </div>
-                <div class="section-technology--container">
-                    <div class="icon-box">
-                        <ion-icon name="logo-html5"></ion-icon>
-                        <div class="icon-details">
-                            <span>HTML5</span>
-                        </div>
-                    </div>
-                    <div class="icon-box">
-                        <ion-icon name="logo-css3"></ion-icon>
-                        <div class="icon-details">
-                            <span>CSS3</span>
-                            <span>SASS/SCSS</span>
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                    <div class="icon-box">
-                        <ion-icon name="logo-nodejs"></ion-icon>
-                        <div class="icon-details">
-                            <span>JavaScript (ES6)</span>
-                            <span>jQuery</span>
-                            <span>TypeScript</span>
-                        </div>
-                    </div>
-                    <div class="icon-box">
-                        <ion-icon name="logo-angular"></ion-icon>
-                        <div class="icon-details">
-                            <span>Angular</span>
-                        </div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fab fa-react"></i>
-                        <div class="icon-details">
-                            <span>React</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                
-            <!-- <section id="contact" class="section__contact">  
-                <div>
-                    <h2>Kontakt</h2>
-                </div>                  
-            </section> -->
-            
-            <!-- <section id="certyfikaty" class="section__certyfikaty padding-top-big"> -->
-                <!-- <a class="anchor" id="certyfikaty"></a>
-
-                <div class="section-contener">
-
-                    <div class="section-header u-center-text">
-                        <div class="bg-color">
-                            <h2 class="heading-secondary">Certyfikaty</h2>
-                        </div>
-                    </div>      
-    
-                    <div class="certyfikaty-flex">    
-                        <!-- Certyfikat TS -->
-                        <!-- <div id=home class="certyfikaty-flex--box">
-                            <a class="lightbox" href="#popup1">
-                                <img src="/picture/understanding_typescript2.jpg" alt="Udemy TypeScript"/>
-                            </a> 
-                            <span class="loop-icon fa fa-search"></span>
-                        </div>
-
-                        <div class="lightbox-target" id="popup1">
-                            <img src="/picture/understanding_typescript2.jpg" alt="Udemy TypeScript"/>
-                            <a class="lightbox-close" href="#certyfikaty"></a>
-                        </div> -->
-                        <!-- Certyfikat npm -->
-                        <!-- <div id=home class="certyfikaty-flex--box">
-                            <a class="lightbox" href="#popup2">
-                                <img src="/picture/npm2.jpg" alt="FreeCodeCamp Certification"/>
-                            </a> 
-                            <span class="loop-icon fa fa-search"></span>
-                        </div>
-
-                        <div class="lightbox-target" id="popup2">
-                            <img src="/picture/npm2.jpg" alt="FreeCodeCamp Certification"/>
-                            <a class="lightbox-close" href="#certyfikaty"></a>
-                        </div>  -->
-                        <!-- Certyfikat freeCodeCamp -->
-                        <!-- <div id=home class="certyfikaty-flex--box">
-                            <a class="lightbox" href="#popup3">
-                                <img src="/picture/ResponsiveWebDesign.PNG" alt="Certyfikat freeCodeCamp"/>
-                            </a> 
-                            <span class="loop-icon fa fa-search"></span>
-                        </div>
-
-                        <div class="lightbox-target" id="popup3">
-                            <img src="/picture/ResponsiveWebDesign.PNG" alt="Certyfikat freeCodeCamp"/>
-                            <a class="lightbox-close" href="#certyfikaty"></a>
-                        </div>        -->
-                        <!-- Certyfikat JS -->
-                        <!-- <div id=home class="certyfikaty-flex--box">
-                            <a class="lightbox" href="#popup4">
-                                <img src="/picture/js.png" alt="Certyfikat JS"/>
-                            </a> 
-                            <span class="loop-icon fa fa-search"></span>
-                        </div>
-
-                        <div class="lightbox-target" id="popup4">
-                            <img src="/picture/js.png" alt="Certyfikat JS"/>
-                            <a class="lightbox-close" href="#certyfikaty"></a>
-                        </div>    
-
-                    </div>                        
-                </div>
-
-            </section> -->
-            <!-- SECTION CV -->
-            <!-- <section id="cv" class="section__cv padding-top-big">
-
-                <div class="section-contener">
-
-                    <div class="section-header u-center-text">
-                        <div class="bg-color">
-                            <h2 class="heading-secondary">CV</h2>
-                        </div>
+                    
+                    <div id="toggle" class="button_container">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
                     </div>
     
-                    <div class="cv-box">
-
-                        <div class="cv-img"></div>  
-                                                         
-                        <a href="#popup-cv" class="button-cv">
-                            <span class="button-pulse">CV</span>                       
-                        </a>    
-                       
-                        
-                        
-                        <div id="popup-cv" class="popup">
-                            <div class="popup-block">
-                                <h1 class="popup-title">The my adventure in the France and photography with Tour De France</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque optio vitae in explicabo recusandae sit id sapiente excepturi tempore, nemo, nulla odio deleniti rerum nisi perferendis aut molestias! Incidunt nesciunt iusto praesentium! In at maiores quibusdam enim quis, quam!</p>
-                                <p>Architecto magni dolores cumque tenetur nemo id aperiam, ratione temporibus at, consectetur totam, fuga et illo rerum earum dicta. Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex accusantium architecto doloremque reprehenderit, asperiores vero dolor, esse inventore dolorem.</p>
-                                <p>Excepturi eaque, reprehenderit dolores, cum molestias repellendus in expedita. Placeat totam, quos pariatur quidem explicabo id harum ab voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium excepturi cumque, hic iure impedit ullam accusantium error natus recusandae, quia fuga quo voluptates officiis?</p>    
-                                <p>Dignissimos debitis eos necessitatibus accusantium natus voluptates illo blanditiis corporis minus. Repudiandae libero quae, illo error expedita consectetur possimus voluptate eum esse quam molestiae tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem voluptatem aliquid voluptatum deleniti necessitatibus provident.</p>
-                                <p>Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus temporibus ut! Velit ducimus repellendus fuga repudiandae culpa voluptatibus delectus praesentium totam odit ratione, tenetur assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas, impedit? Magnam dolorum, iure repellendus vitae.</p>
-                                <p>Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam labore sequi adipisci tempore exercitationem quos, libero, reprehenderit facere quasi soluta, itaque at eum cum possimus! Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex odit, sequi eveniet quibusdam, dolores?</p>
-                                <p>Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia, delectus provident, illum aperiam, atque molestiae. Cum delectus, doloribus expedita eius veritatis assumenda deleniti veniam reprehenderit animi ut, eaque asperiores, dicta incidunt omnis repellendus dolorum enim inventore rerum voluptatem saepe error id.</p>
-                                <a href="#cv" class="popup-close">close</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-
-            </section> -->
-            <!-- SECTION CONTACT -->
-            <!-- <section id="contact" class="section__contact padding-top-big"> -->
-<!-- 
-                <div class="section-contener">
-
-                    <div class="section-header u-center-text">
-                        <div class="bg-color">
-                            <h2 class="heading-secondary">Kontakt</h2>
-                        </div>
-                    </div>
-
-                    <div class="box">
-
-                        <div class="wrapper">
-
-                            <div class="contact-text">
-                                <span>Masz pytania?</span>
-                                <p>Napisz do mnie</p>
-                                <span>tomala.kamil@gmail.com</span>
-                            </div>
-                 -->
-                                <!-- <div class="honeycomb">
-                
-                                    <div class="ibws-fix">
-                
-                                        <a class="hexagon" href="https://github.com/kato86" target="_blank">
-                                            <div class="hexagontent"><i class="fab fa-github"></i></div>                        
-                                        </a>
-                                        
-                
-                                        <a class="hexagon" href="https://twitter.com/ka_to_86?lang=pl" target="_blank">                        
-                                            <div class="hexagontent"><i class="fab fa-twitter"></i></div>                        
-                                        </a>
-                
-                                        <a class="hexagon" href="https://codepen.io/kato86/#" target="_blank">
-                                            <div class="hexagontent"><i class="fab fa-codepen"></i></div>
-                                        </a>
-                
-                                        <a class="hexagon" href="https://www.freecodecamp.org/kamil" target="_blank">
-                                            <div class="hexagontent"><i class="fab fa-free-code-camp"></i></div>
-                                        </a>
-                                        
-                                    </div>    
-                                    
-                                </div> -->
-                
-                                
-                            <!-- </div>
-                            
-                        </div>
-                        
-                    </div>
-
-                    <div class="arrow-button">
-
-                        <a class="btn btn-contact scroller" href="#footer" data-offset="-10"><i class="fas fa-arrow-down arrow-animated arrow-animated--contact"></i></a>          
-
+                    <div id="overlay" class="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="#start" class="a-burger" data-offset="0">Start</a></li>
+                                <li><a href="#about" class="a-burger" data-offset="0">O mnie</a></li></li>
+                                <li><a href="#certyfikaty" class="a-burger" data-offset="0">Certyfikaty</a></li>
+                                <li><a href="#cv" class="a-burger" data-offset="0">CV</a></li>
+                                <li><a href="#contact" class="a-burger" data-offset="0">Kontakt</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     
-            </section> -->
-            
-        </main>
+            </header>
+    
+            <main class="main">
+                
+                <section id="start" class="section-start">
+                    <div class="section-start--text">
+                        <span class="name">Kamil</span>
+                        <span class="anim-border--right"></span>                    
+                        <span class="surname">Tomala</span>
+                        <span class="anim-border--left"></span>
+                        <span class="web-dev-text">Web Developer</span>  
+                    </span>  
+                    <div class="icons-container">
+                        <a href="https://github.com/kato86" class='icon--github' target="_blank">
+                            GitHub
+                        </a>                
+                        <a href="/" class='icon--linkedin' target="_blank">
+                            LinkedIn
+                        </a>                
+                        <a href="/" class='icon--twitter' target="_blank">
+                            Twitter
+                        </a>                
+                        <a href="/" class='icon--instagram' target="_blank">
+                            Instagram
+                        </a>                
+                        <a href="/" class='icon--fb' target="_blank">
+                            fb
+                        </a>                
+                        <a href="/" class='icon--mail' target="_blank">
+                            mail
+                        </a>                
+                    </div>              
+                </section>
+    
+                <section id="about" class="section-about">                    
+                    <figure class="photo__about"></figure>                    
+                    <div class="section-about--container"> 
+                        <div class="section-about--text">
+                            <p>Lorem ipsum dolor sit amet libero auctor varius, scelerisque pede id mauris et rhoncus interdum, lacus. Maecenas ante. Donec sit amet, consectetuer tincidunt nec, scelerisque ligula, egestas ipsum dolor nonummy consequat. Morbi quis ante. Maecenas blandit velit wisi, id leo ac quam fermentum risus. Aliquam vitae justo. Donec vitae mauris. Fusce aliquet at, justo. Fusce tellus. Curabitur fringilla aliquet. In ornare vel, velit. Nunc id eleifend vitae, rutrum laoreet. Nam quis lectus blandit risus neque vel massa. Nulla ante. Phasellus pulvinar interdum. Proin quis lacus tellus augue, sagittis nec, iaculis malesuada congue. Nam nec tincidunt vehicula, feugiat ac, vehicula lectus. Curabitur feugiat dui, porta tincidunt.</p>
+                        </div>                    
+                    </div>
+                </section>
+    
+                <section class="section-technology">
+                    <div class="heading-small">
+                        <span>Poznane technologie</span>
+                    </div>
+                    <div class="section-technology--container">
+                        <div class="icon-box">
+                            <ion-icon name="logo-html5"></ion-icon>
+                            <div class="icon-details">
+                                <span>HTML5</span>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <ion-icon name="logo-css3"></ion-icon>
+                            <div class="icon-details">
+                                <span>CSS3</span>
+                                <span>SASS/SCSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <ion-icon name="logo-nodejs"></ion-icon>
+                            <div class="icon-details">
+                                <span>JavaScript (ES6)</span>
+                                <span>jQuery</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <ion-icon name="logo-angular"></ion-icon>
+                            <div class="icon-details">
+                                <span>Angular</span>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fab fa-react"></i>
+                            <div class="icon-details">
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    
+                <!-- <section id="contact" class="section__contact">  
+                    <div>
+                        <h2>Kontakt</h2>
+                    </div>                  
+                </section> -->
+                
+                <!-- <section id="certyfikaty" class="section__certyfikaty padding-top-big"> -->
+                    <!-- <a class="anchor" id="certyfikaty"></a>
+    
+                    <div class="section-contener">
+    
+                        <div class="section-header u-center-text">
+                            <div class="bg-color">
+                                <h2 class="heading-secondary">Certyfikaty</h2>
+                            </div>
+                        </div>      
+        
+                        <div class="certyfikaty-flex">    
+                            <!-- Certyfikat TS -->
+                            <!-- <div id=home class="certyfikaty-flex--box">
+                                <a class="lightbox" href="#popup1">
+                                    <img src="/picture/understanding_typescript2.jpg" alt="Udemy TypeScript"/>
+                                </a> 
+                                <span class="loop-icon fa fa-search"></span>
+                            </div>
+    
+                            <div class="lightbox-target" id="popup1">
+                                <img src="/picture/understanding_typescript2.jpg" alt="Udemy TypeScript"/>
+                                <a class="lightbox-close" href="#certyfikaty"></a>
+                            </div> -->
+                            <!-- Certyfikat npm -->
+                            <!-- <div id=home class="certyfikaty-flex--box">
+                                <a class="lightbox" href="#popup2">
+                                    <img src="/picture/npm2.jpg" alt="FreeCodeCamp Certification"/>
+                                </a> 
+                                <span class="loop-icon fa fa-search"></span>
+                            </div>
+    
+                            <div class="lightbox-target" id="popup2">
+                                <img src="/picture/npm2.jpg" alt="FreeCodeCamp Certification"/>
+                                <a class="lightbox-close" href="#certyfikaty"></a>
+                            </div>  -->
+                            <!-- Certyfikat freeCodeCamp -->
+                            <!-- <div id=home class="certyfikaty-flex--box">
+                                <a class="lightbox" href="#popup3">
+                                    <img src="/picture/ResponsiveWebDesign.PNG" alt="Certyfikat freeCodeCamp"/>
+                                </a> 
+                                <span class="loop-icon fa fa-search"></span>
+                            </div>
+    
+                            <div class="lightbox-target" id="popup3">
+                                <img src="/picture/ResponsiveWebDesign.PNG" alt="Certyfikat freeCodeCamp"/>
+                                <a class="lightbox-close" href="#certyfikaty"></a>
+                            </div>        -->
+                            <!-- Certyfikat JS -->
+                            <!-- <div id=home class="certyfikaty-flex--box">
+                                <a class="lightbox" href="#popup4">
+                                    <img src="/picture/js.png" alt="Certyfikat JS"/>
+                                </a> 
+                                <span class="loop-icon fa fa-search"></span>
+                            </div>
+    
+                            <div class="lightbox-target" id="popup4">
+                                <img src="/picture/js.png" alt="Certyfikat JS"/>
+                                <a class="lightbox-close" href="#certyfikaty"></a>
+                            </div>    
+    
+                        </div>                        
+                    </div>
+    
+                </section> -->
+                <!-- SECTION CV -->
+                <!-- <section id="cv" class="section__cv padding-top-big">
+    
+                    <div class="section-contener">
+    
+                        <div class="section-header u-center-text">
+                            <div class="bg-color">
+                                <h2 class="heading-secondary">CV</h2>
+                            </div>
+                        </div>
+        
+                        <div class="cv-box">
+    
+                            <div class="cv-img"></div>  
+                                                             
+                            <a href="#popup-cv" class="button-cv">
+                                <span class="button-pulse">CV</span>                       
+                            </a>    
+                           
+                            
+                            
+                            <div id="popup-cv" class="popup">
+                                <div class="popup-block">
+                                    <h1 class="popup-title">The my adventure in the France and photography with Tour De France</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque optio vitae in explicabo recusandae sit id sapiente excepturi tempore, nemo, nulla odio deleniti rerum nisi perferendis aut molestias! Incidunt nesciunt iusto praesentium! In at maiores quibusdam enim quis, quam!</p>
+                                    <p>Architecto magni dolores cumque tenetur nemo id aperiam, ratione temporibus at, consectetur totam, fuga et illo rerum earum dicta. Vitae ullam harum enim aliquid hic commodi voluptas cumque iste ex accusantium architecto doloremque reprehenderit, asperiores vero dolor, esse inventore dolorem.</p>
+                                    <p>Excepturi eaque, reprehenderit dolores, cum molestias repellendus in expedita. Placeat totam, quos pariatur quidem explicabo id harum ab voluptatum. Necessitatibus, aliquam! Dolorum voluptatem ut laudantium excepturi cumque, hic iure impedit ullam accusantium error natus recusandae, quia fuga quo voluptates officiis?</p>    
+                                    <p>Dignissimos debitis eos necessitatibus accusantium natus voluptates illo blanditiis corporis minus. Repudiandae libero quae, illo error expedita consectetur possimus voluptate eum esse quam molestiae tempore dignissimos ipsam similique ab quod. Ea earum adipisci rem voluptatem aliquid voluptatum deleniti necessitatibus provident.</p>
+                                    <p>Dicta eum amet impedit maiores accusamus numquam saepe necessitatibus temporibus ut! Velit ducimus repellendus fuga repudiandae culpa voluptatibus delectus praesentium totam odit ratione, tenetur assumenda, labore esse et nostrum a, aut veritatis. Nihil, voluptas, impedit? Magnam dolorum, iure repellendus vitae.</p>
+                                    <p>Temporibus voluptatum voluptatibus iste, nam atque dignissimos quam labore sequi adipisci tempore exercitationem quos, libero, reprehenderit facere quasi soluta, itaque at eum cum possimus! Facilis, tempora soluta at quis. Nemo expedita voluptate esse nam ex odit, sequi eveniet quibusdam, dolores?</p>
+                                    <p>Praesentium laboriosam iste dolore cumque voluptatibus deleniti quia, delectus provident, illum aperiam, atque molestiae. Cum delectus, doloribus expedita eius veritatis assumenda deleniti veniam reprehenderit animi ut, eaque asperiores, dicta incidunt omnis repellendus dolorum enim inventore rerum voluptatem saepe error id.</p>
+                                    <a href="#cv" class="popup-close">close</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+    
+                </section> -->
+                <!-- SECTION CONTACT -->
+                <!-- <section id="contact" class="section__contact padding-top-big"> -->
+    <!-- 
+                    <div class="section-contener">
+    
+                        <div class="section-header u-center-text">
+                            <div class="bg-color">
+                                <h2 class="heading-secondary">Kontakt</h2>
+                            </div>
+                        </div>
+    
+                        <div class="box">
+    
+                            <div class="wrapper">
+    
+                                <div class="contact-text">
+                                    <span>Masz pytania?</span>
+                                    <p>Napisz do mnie</p>
+                                    <span>tomala.kamil@gmail.com</span>
+                                </div>
+                     -->
+                                    <!-- <div class="honeycomb">
+                    
+                                        <div class="ibws-fix">
+                    
+                                            <a class="hexagon" href="https://github.com/kato86" target="_blank">
+                                                <div class="hexagontent"><i class="fab fa-github"></i></div>                        
+                                            </a>
+                                            
+                    
+                                            <a class="hexagon" href="https://twitter.com/ka_to_86?lang=pl" target="_blank">                        
+                                                <div class="hexagontent"><i class="fab fa-twitter"></i></div>                        
+                                            </a>
+                    
+                                            <a class="hexagon" href="https://codepen.io/kato86/#" target="_blank">
+                                                <div class="hexagontent"><i class="fab fa-codepen"></i></div>
+                                            </a>
+                    
+                                            <a class="hexagon" href="https://www.freecodecamp.org/kamil" target="_blank">
+                                                <div class="hexagontent"><i class="fab fa-free-code-camp"></i></div>
+                                            </a>
+                                            
+                                        </div>    
+                                        
+                                    </div> -->
+                    
+                                    
+                                <!-- </div>
+                                
+                            </div>
+                            
+                        </div>
+    
+                        <div class="arrow-button">
+    
+                            <a class="btn btn-contact scroller" href="#footer" data-offset="-10"><i class="fas fa-arrow-down arrow-animated arrow-animated--contact"></i></a>          
+    
+                        </div>
+                        
+                </section> -->
+                
+            </main>
+        </div>
+
+        
 <!-- FOOTER -->
         <!-- <footer id="footer">
             <div id="site-footer">
