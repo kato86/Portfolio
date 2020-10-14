@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   z-index: 2;
   transition: all 0.5s;
@@ -52,21 +52,16 @@
     margin-right: 10px;
 
     &--items {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      margin: 10px;
       list-style: none;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       color: #fff;
-      padding-bottom: 0;
-      margin-left: 2rem;
-      width: 100px;
-      margin-top: 10px;
       transition: all 0.1s;
 
       a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        height: 100%;
         text-decoration: none;
         font-size: 1.5rem;
         color: inherit;
@@ -78,9 +73,8 @@
         // }
       }
       &:hover {
-        border: 1px solid #fff;
-        border-radius: 4px;
-        padding: 3px;
+        // TODO: kolor do zmiany, ale jeszcze nie wiem na jaki???
+        color: rgb(196, 161, 98);
       }
     }
 

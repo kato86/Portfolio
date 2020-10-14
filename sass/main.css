@@ -471,6 +471,7 @@ body {
   display: inline-block;
   border-radius: 100%;
   overflow: hidden;
+  margin-left: 20px;
 }
 
 .photo__shape {
@@ -575,9 +576,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   z-index: 2;
   -webkit-transition: all 0.5s;
@@ -644,37 +645,29 @@ footer {
 }
 
 .navbar__list--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
   list-style: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #fff;
-  padding-bottom: 0;
-  margin-left: 2rem;
-  width: 100px;
-  margin-top: 10px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 
 .navbar__list--items a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
   text-decoration: none;
   font-size: 1.5rem;
   color: inherit;
 }
 
 .navbar__list--items:hover {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  padding: 3px;
+  color: #c4a162;
 }
 
 @media (max-width: 600px) {
