@@ -24,7 +24,7 @@
         width: 65%;
         margin-left: 20px;
         text-align: center;
-        animation: show-text 3s ease-in;
+        animation: show-text 2s ease-in-out;
 
         @include respond(tab-land) {
           letter-spacing: 25px;
