@@ -487,8 +487,8 @@ body {
   z-index: -1;
   width: 400px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(38, 70, 83, 0.8))), url("../../img/me_to_about.jpg");
-  background-image: linear-gradient(to right bottom, rgba(38, 70, 83, 0.8)), url("../../img/me_to_about.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(38, 70, 83, 0.8))), url("/Portfolio/img/me_to_about.jpg");
+  background-image: linear-gradient(to right bottom, rgba(38, 70, 83, 0.8)), url("/Portfolio/img/me_to_about.jpg");
   background-size: cover;
   background-position: top;
 }

@@ -20,7 +20,7 @@
   height: 400px;
 
   background-image: linear-gradient(to right bottom, rgba(#264653, 0.8)),
-    url("../../img/me_to_about.jpg");
+    url("/Portfolio/img/me_to_about.jpg"); //zmiana linku do obrazka, aby poprawnie wyświetlał się na github
   background-size: cover;
   background-position: top;
 }
