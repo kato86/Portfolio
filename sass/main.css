@@ -484,7 +484,6 @@ body {
 
 .photo__about {
   position: absolute;
-  z-index: -1;
   width: 400px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(38, 70, 83, 0.8))), url("/Portfolio/img/me_to_about.jpg");
@@ -585,6 +584,27 @@ footer {
   transition: all 0.5s;
   font-family: "Montserrat", sans-serif;
   padding: 10px 0 0 0;
+}
+
+.header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 10px;
+}
+
+.header__text span {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.header__text span:last-child {
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -1056,6 +1076,7 @@ footer {
 .section-about--text {
   padding: 20px;
   width: 80%;
+  z-index: 1;
 }
 
 .section-about--text p {
