@@ -158,14 +158,10 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #eef4f2;
-  background-color: #fff;
-  padding: 10px;
-  overflow-x: hidden;
 }
 
 .container {
   background-color: #264653;
-  border-radius: 5px;
 }
 
 .heading-secondary {
