@@ -558,7 +558,6 @@ footer {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-family: "Montserrat", sans-serif;
-  padding: 10px 0 0 0;
 }
 
 .header__text {
@@ -881,7 +880,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 60vh;
+  height: 100vh;
 }
 
 .section-start--text {
