@@ -158,14 +158,10 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #eef4f2;
-  background-color: #fff;
-  padding: 10px;
-  overflow-x: hidden;
 }
 
 .container {
   background-color: #264653;
-  border-radius: 5px;
 }
 
 .heading-secondary {
@@ -467,31 +463,6 @@ body {
   position: relative;
 }
 
-.photo {
-  display: inline-block;
-  border-radius: 100%;
-  overflow: hidden;
-  margin-left: 20px;
-}
-
-.photo__shape {
-  max-height: 70px;
-}
-
-.photo__shape > img {
-  max-width: 70px;
-}
-
-.photo__about {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(38, 70, 83, 0.8))), url("/Portfolio/img/me_to_about.jpg");
-  background-image: linear-gradient(to right bottom, rgba(38, 70, 83, 0.8)), url("/Portfolio/img/me_to_about.jpg");
-  background-size: cover;
-  background-position: top;
-}
-
 footer {
   height: 200px;
 }
@@ -583,7 +554,6 @@ footer {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-family: "Montserrat", sans-serif;
-  padding: 10px 0 0 0;
 }
 
 .header__text {
@@ -906,7 +876,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 60vh;
+  height: 100vh;
 }
 
 .section-start--text {
