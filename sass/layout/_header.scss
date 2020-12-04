@@ -11,6 +11,7 @@
     display: flex;
     align-self: flex-start;
     margin-left: 10px;
+    padding: 15px;
     font-size: 18px;
 
     span {
@@ -59,20 +60,18 @@
 }
 
 .navbar {
-  float: right;
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-    margin-right: 10px;
 
     &--items {
       display: flex;
       justify-self: center;
       align-items: center;
-      margin: 10px;
+      margin: 0 40px;
       list-style: none;
       letter-spacing: 2px;
       color: #fff;

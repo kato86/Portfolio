@@ -563,6 +563,7 @@ footer {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 10px;
+  padding: 15px;
   font-size: 18px;
 }
 
@@ -615,10 +616,6 @@ footer {
   width: 90px;
 }
 
-.navbar {
-  float: right;
-}
-
 .navbar__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,7 +627,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
-  margin-right: 10px;
 }
 
 .navbar__list--items {
@@ -641,7 +637,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 0 40px;
   list-style: none;
   letter-spacing: 2px;
   color: #fff;
