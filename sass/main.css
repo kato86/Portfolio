@@ -7,113 +7,6 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@-webkit-keyframes text-border-rigth {
-  0% {
-    width: 0;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  100% {
-    width: 65%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-@keyframes text-border-rigth {
-  0% {
-    width: 0;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  100% {
-    width: 65%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-
-@-webkit-keyframes text-border-left {
-  0% {
-    width: 0%;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  100% {
-    width: 65%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-
-@keyframes text-border-left {
-  0% {
-    width: 0%;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  100% {
-    width: 65%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-
-@-webkit-keyframes show-text {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-
-@keyframes show-text {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-  }
-}
-
-@-webkit-keyframes show-text--bottom {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    bottom: 50px;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    bottom: 100px;
-  }
-}
-
-@keyframes show-text--bottom {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    bottom: 50px;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    bottom: 100px;
-  }
-}
-
 *,
 *::after,
 *::before {
@@ -655,6 +548,12 @@ footer {
   color: #c4a162;
 }
 
+@media (max-width: 900px) {
+  .navbar__list--items {
+    margin: 0 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .navbar__list {
     display: none;
@@ -742,6 +641,12 @@ footer {
 
 .button_container span:nth-of-type(3) {
   top: 22px;
+}
+
+@media (max-width: 600px) {
+  .button_container {
+    display: block;
+  }
 }
 
 .overlay {
@@ -880,113 +785,6 @@ footer {
   width: 100%;
   height: inherit;
   position: relative;
-}
-
-.section-start--text .name {
-  display: block;
-  position: absolute;
-  top: 65px;
-  font-size: 11rem;
-  letter-spacing: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  width: 65%;
-  margin-left: 20px;
-  text-align: center;
-  -webkit-animation: show-text 3s ease-in;
-          animation: show-text 3s ease-in;
-}
-
-@media (max-width: 1200px) {
-  .section-start--text .name {
-    letter-spacing: 25px;
-  }
-}
-
-@media (max-width: 900px) {
-  .section-start--text .name {
-    letter-spacing: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .section-start--text .name {
-    letter-spacing: 16px;
-  }
-}
-
-.section-start--text .surname {
-  display: block;
-  position: absolute;
-  right: 0;
-  font-size: 11rem;
-  letter-spacing: 20px;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  width: 65%;
-  float: right;
-  text-align: center;
-  top: 230px;
-  margin-right: 20px;
-  -webkit-animation: show-text 3s ease-in;
-          animation: show-text 3s ease-in;
-}
-
-@media (max-width: 1200px) {
-  .section-start--text .surname {
-    letter-spacing: 25px;
-  }
-}
-
-@media (max-width: 900px) {
-  .section-start--text .surname {
-    letter-spacing: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .section-start--text .surname {
-    letter-spacing: 16px;
-  }
-}
-
-.section-start--text .web-dev-text {
-  display: block;
-  position: absolute;
-  bottom: 100px;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 23px;
-  font-family: "Montserrat", sans-serif;
-  -webkit-animation: show-text--bottom 2s ease-in-out;
-          animation: show-text--bottom 2s ease-in-out;
-}
-
-@media (max-width: 1200px) {
-  .section-start--text .web-dev-text {
-    letter-spacing: 22px;
-  }
-}
-
-@media (max-width: 900px) {
-  .section-start--text .web-dev-text {
-    letter-spacing: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .section-start--text .web-dev-text {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 900px) {
-  .section-start--text {
-    margin-top: 50px;
-  }
 }
 
 @media (max-width: 900px) {
