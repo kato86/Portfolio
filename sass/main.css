@@ -984,12 +984,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .section-start--text {
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 900px) {
   .section-start {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

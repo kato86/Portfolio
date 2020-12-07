@@ -90,10 +90,6 @@
           font-size: 15px;
         }
       }
-
-      @include respond(tab-port) {
-        margin-top: 50px;
-      }
     }
 
     @include respond(tab-port) {
